@@ -1,0 +1,3302 @@
+﻿Column1,Column2
+"Patch Set 1: ContactUs framework is fine as it is, but SamsungAccountSDK API changed drastically. Old APIs are replaced in Sample App.",API Calls
+you may use fixed list of ids and list APIs to get true or false.,API Calls
+Need to remove this api. Now have no plan to use this api.,API Calls
+no use usedefaults directly... use store class as wrapper API,API Calls
+"It includes TTL along with the data to store in User Defaults. For Insurer api, it is there to make new server request for latest data after TTL (current value : day in milis) and stores data and 'time to fetch' (updateTime) with SHMKeyString.",API Calls
+"since this is async API, the return stmt won't wait for this block to complete.",API Calls
+pls check if this API (which is not supported in iOS 9) is used elsewhere and let's fix together.,API Calls
+Checked in whole project. API is used correctly in Other modules,API Calls
+"may be in that case it will wait for connection timeout in that case. But if we check early, then it will not even call the server API.",API Calls
+"This is a kind of data class. So, by default, I made getters and setters for all fields.
+We provide our APIs for unspecific users. 
+We don't know if they want to change a specific values after creating instance.
+That's why I added getters and setters for all fields. 
+If some getters and setters are missing, it is a fault or some case I have undetermined issues.",API Calls
+"remove UserDefaults code here and add API in SGEsimSettingsProvider 
+All the settings related task will be in settings provider.
+
+All UserDefaults will be abstraction in settings provider class
+\",API Calls
+"SIngle lens should not have sphere stitch mode. If it is giving sphere stitch mode, then that is a bug - an important one, since it affects stitching engine too.",Defect
+Wouldn't it stop automatically going back after video playing finished?,Defect
+"Patch Set 1:
+
+@zahidi, please pull the code and apply necessary changes in UI to avoid crashes.",Defect
+Same error . Please correct line 15 and 16,Defect
+"Local variable is supposed to be collected whenever control goes out of scope.
+If you you face any null problem, you should have assigned nil to it instead of creating anOther instance.",Defect
+"after translating in google it  says ""	
+???? ?-%@ ???? ?? ?-%@?"" and app is not getting crash.",Defect
+Please check for OOBE fail case. In this case this variable should be False.,Defect
+"create two separate function 
+1. for check file and create if not exists
+2. check file size and append new content 
+3. file size condition should be file_size + new_content_size <= 1000 then write in this current file, else erase data and write new content",Defect
+"AlmofireAdapter has some bug ""wrapper can not do correctly percentEncoing of URL query data """,Defect
+SomeTimes we see jumping problem for using this type reload. Please check this carefully. Suppose you scroll down and go anOther page then again come.,Defect
+I have not seen any jumping problem here. I also applied this type of reload in anOther feature and had not seen.,Defect
+"Please define levels here 
+#define BATTERY_ALMOST_GONE 4
+#define BATTERY_VERY_LOW 9
+#define BATTERY_LOW 29
+#define BATTERY_MODERATE 54
+#define BATTERY_HIGH
+#define BATTERY_VERY_HIGH 100
+
+if(batteryLevel>0 && batteryLevel == BATTERY_ALMOST_GONE)
+ // TO DO 1
+else if(batteryLevel> BATTERY_ALMOST_GONE && batteryLevel == BATTERY_VERY_LOW)
+ // TO DO 2
+...........
+..........",Defect
+DID is not available in STMS server. W will apply the DID as soon as it is available.,Defect
+"Use separate 3 condition
+1. OOBE state
+2. Connected state
+3. Disconnected state",Defect
+"No network status changed Unit test is found. please, if network status is changed/updated then corresponding notification is raised.",Defect
+"For LTR, if it is defined in xib file then it might not needed to assign textAlignment = left. 
+@Zahidi: Please check in xib.",Defect
+"In SGWidgetStore Constructor we initialized 4 maps
+
+self.initializeModenWidgetNameMap()
+self.initializeModenLiteWidgetNameMap()
+self.initializeModenWidgetImagePathMap()
+self.initializeModenLiteWidgetImagePathMap()
+
+but when we want to save Ordered Widget List, then we don't need to initialize these maps because we are not using these maps while saving the widget data,  we only saves the widget_id & widget_order, they are provided by the functions parameter. So I think we shouldn't initialize an object of SGWidgetStore rather I made the function static (class method) to ignore executing unnecessary codes.",Defect
+"Patch Set 1:
+
+(1 comment)
+
+I mentioned HTTP Manager crash in cause & measure ""Fixed an HTTP Manager crash issue occurred if host name is invalid.""
+
+This crash occur only when notification service request app icon with invalid name.",Defect
+It can't be accessed by this project and needs to updated as dev_gearfit,Defect
+SGLogger can't be accessed by this project and needs to updated as dev_gearfit,Defect
+"Patch Set 1: Code-Review-1
+
+Crashes in SRTP call",Defect
+"Patch Set 1:
+
+The following change must be merged prior to attempting to merge this change.
+
+Change 331871 [PTTApp][Added XMLParser for parsing group info after GMC Fetch for each group]",Defect
+For this code harman App getting crashed,Defect
+It is better to keep the stack implementation as it is maintained according to the MCPTT callbacks,Defect
+"Without this change, when SBC server flag enable, the app getting crashed",Defect
+"Patch Set 1: Verified-1 Code-Review-2
+
+Still Crashing.",Defect
+if regman is NULL. then forced unwrap will crash the app,Defect
+Put cause and measure while fixing issues.,Defect
+"Patch Set 1: Code-Review-1
+
+No need to merge this CL. Already resolved these issues. Current infer ERROR = 0",Defect
+"Seems these two varibale never used, they will create dead store issues.",Defect
+"Please check if for null case it crashes or not. Also, make proper amends.",Defect
+"Patch Set 1: Verified-1
+
+Description Validation failed.
+Error: [Feature Name] has invalid value :  Two_Way_Sync_Sports  
+Format: [Title] Apt title for your change [Checking Method] Mention the testing flow [Type] feature (catch-up) or Patch or Feature or Bugfix [Feature Name] Your Feature Name [Self Test Result] Pass",Defect
+"Patch Set 2: Verified-1
+
+Description Validation failed.
+Error: [Feature Name] has invalid value : Two_Way_Sync_Sports  
+Format: [Title] Apt title for your change [Checking Method] Mention the testing flow [Type] feature (catch-up) or Patch or Feature or Bugfix [Feature Name] Your Feature Name [Self Test Result] Pass",Defect
+"for no network connection case, failure block will be executed with ""Error Domain=NSURLErrorDomain"".",Defect
+Retrieve the error code from result.,Defect
+Please give comment why this modification is needed.,Documentation
+"please, write what is the problem and what is the measure briefly",Documentation
+Please give log here.,Documentation
+You could add comment here to detect any memory warnings.,Documentation
+Insert log to print selected index here.,Documentation
+Insert log to print selected index here.,Documentation
+it should be better to give ui reference about how  this maximum alarm count is taken,Documentation
+"if  found any update, respective class will start update after check some precondition. response will handle that class",Documentation
+"please, add log what is save.",Documentation
+"Please share more details about refactoring in this commit message
+1. What is the purpose of refactor?
+2. Which functions/code are refactored?
+3. How did you test the changed code?",Documentation
+"Patch Set 1:
+
+(2 comments)
+
+Please add logs in Alarm feature. there are few logs at present.",Documentation
+Please remove that part. This is unnecessary.,Documentation
+removing this unnecessary code lines,Documentation
+Please remove that part. This is unnecessary.,Documentation
+should be an else part of showing log,Documentation
+Please use SGLogger.log(),Documentation
+"Please use SGLogger.log() and put meaningful text. For example, the log text ""isPermissionTaken"" doesn't match with the actual function name. Please check.",Documentation
+"Please put log here to write ""gearId""",Documentation
+"Patch Set 1:
+
+(2 comments)
+
+I suggest to add more logs in important places",Documentation
+Put meaningful log inside function.,Documentation
+"Patch Set 3: Code-Review+1
+
+Checked Item:
+1. Add timer for log dump and sensor dump.
+2. If timeout occur (15.0) then send fail result via delegate.",Documentation
+"According to apple developer Documentation, 
+
+You must send this message from the thread on which the timer was installed. If you send this message from anOther thread, the input source associated with the timer may not be removed from its run loop, which could prevent the thread from exiting properly.
+
+Do we make sure that start and end of our timer is occurring in the same thread? 
+
+https://developer.apple.com/Documentation/foundation/timer/1415405-invalidate",Documentation
+Print the log,Documentation
+"There is no action or any changes to flow, only this code prints log",Documentation
+This class will be responsible for IMSStack Log Management,Documentation
+Prints IMSStack Logs in App via delegate,Documentation
+Entry point of incoming message notification in MCPTT & Set log,Documentation
+"Patch Set 2: Verified-1 Code-Review-1
+
+Patch - 2 is only for receiving more logs. No Other changes.",Documentation
+Set log with SRBD-MCPTT Token,Documentation
+You do not need to convert the error to string. Use SESLibError description.,Documentation
+Please use error description,Documentation
+Add TODO for moving retrieval from willAppear as this method will be called for many scenarios.,Documentation
+Add TODO to make '....CardCell' base class to remove duplicate codes.,Documentation
+"After creating new CardCell base class, this won't be necessary anymore.",Documentation
+added a TODO in codebase.,Documentation
+Add TODO comment to remove hard values in switch case.,Documentation
+please follow the proper way for printing error msg,Documentation
+Follow above comment and add an extension,Documentation
+print the error in log.,Documentation
+Add explanation comment here.,Documentation
+please follow the proper format for error log,Documentation
+please follow the proper format for error log,Documentation
+Add logs in Validation blocks.,Documentation
+This TODO is Required. pronab.m is working on this.,Documentation
+"please provide log with ""errorDescription"" if required, Otherwise replace with ""_"" if it is not used",Documentation
+"please provide log with ""errorDescription"" if required, Otherwise replace with ""_"" if it is not used",Documentation
+please add instructive comment about what to do with this commented out code,Documentation
+"please find a better way with the usage of constants or enums to avoid -1. If it is absolutely needed, please add appropriate NOTE",Documentation
+It should be error log. and please provide it in proper format.,Documentation
+create device image folder in Assets and fetch image files.,Documentation
+You do not need to convert the error to string. Use SESLibError description.,Documentation
+"1. Follow the naming convention for the error case.
+2. Maintain the number series for the error type.",Documentation
+Add TODO for moving retrieval from willAppear as this method will be called for many scenarios.,Documentation
+add a description and change to requireId,Documentation
+Add TODO to make '....CardCell' base class to remove duplicate codes.,Documentation
+please follow the proper format for error log,Documentation
+please follow the proper format for error log,Documentation
+Add TODO comment to remove hard values in switch case.,Documentation
+please follow the proper format for error log,Documentation
+please follow the proper format for error log,Documentation
+"Patch Set 1:
+
+Please change folder structure & separate SIC FW and score task in different folder",Documentation
+"your two variable names are different (mSize and size).In this case this is redundant.
+Same comments applied for all varibales",Documentation
+"your two variable names are different (mSize and size).In this case this is redundant.
+Same comments applied for all varibales",Documentation
+In this context setting and updating is same thing.Just provide a no argument constructor . Caller will decide when it will set the value.Object construction time or later,Documentation
+"No. Util class is not a collection for all things. 
+In OOP, it's more natural to provide methods by itself for it's own data. 
+So, it's proper that toString for it's data is in itself.",Documentation
+"Please use the copyright for Social app,
+
+This is the copyright for SEMSSDK",Documentation
+"Please use the copyright for Social app,
+
+This is the copyright for SEMSSDK",Documentation
+"Please follow the similar naming for Protocol.
+i.e. FeedInteractorRequestProtocol / FeedInteractorResponseProtocol",Documentation
+"Please follow the similar naming for Protocol.
+i.e. FeedInteractorRequestProtocol / FeedInteractorResponseProtocol",Documentation
+Implement the Data manager protocol,Documentation
+"Please use the copyright for Social app,
+
+This is the copyright for SEMSSDK",Documentation
+Kindly follow the protocol naming convension,Documentation
+"Please use the copyright for Social app,
+
+This is the copyright for SEMSSDK",Documentation
+Please Follow the Protocol naming convention,Documentation
+"Please use the copyright for Social app,
+
+This is the copyright for SEMS SDK",Documentation
+"Please use the copyright for Social app,
+
+This is the copyright for SEMS SDK",Documentation
+"Please use the copyright for Social app,
+
+This is the copyright for SEMS SDK",Documentation
+Please make a note or TODO comment here to use SEMSManager later.,Documentation
+Better to implement Data manager protocol,Documentation
+Check for recycling options. Add TODO comment for now.,Documentation
+"We may change databases, list may come from files, or Other storages. So, app doesn't need to specify that.",Documentation
+You need to set GDPR supported mcd and enable TEST GDPR  from feature manager.,Documentation
+"please rename it as View, which is more consitent and readable in iOS platform.",False Positive
+For now we have no plan to use this function from Other place. So i want to keep it as it is.,False Positive
+We are considering this two apps for now. It will be discussed later for Other apps.,False Positive
+I think we no need. We have log already.,False Positive
+"After creating new CardCell base class, this won't be necessary anymore.",False Positive
+This might do early return before memory release,Logical
+pi / 2 refer to south pole in 360 view mode,Logical
+Please confirm that Date() constructor doesn't return nil or invalid format. Otherwise you have to check for the error case.,Logical
+"apply check to same line like 
+ if let lastUpdateCheckTime:Int = UserDefaults.standard.string(forKey: SGSuotaConstantsKey.LastUpdateCheckDate) {
+}
+may int datatype default value should be 0 
+Otherwise use  
+
+if let lastUpdateCheckTime:Int = UserDefaults.standard.string(forKey: SGSuotaConstantsKey.LastUpdateCheckDate) ?? 0 {
+}",Logical
+there should be a log by which we can check how getProgress value gets 0 value,Logical
+Will not this menu available when GM is connected with 3G/LTE Watch?,Logical
+It is not supported because of technical issue. UX guide is updated.,Logical
+"If failed to parse ZIP file, process should return from here rather executing following codes. If you return from here, it is required to call remove observer.",Logical
+"your point is Logical that it's fail to unZip next Other process is use less but it normal case but it's required for next case like 
+
+1. download zip file from server
+2. start copy after press installation then some how file to copy/ user kill the app/disconnection occur
+3. Now user try to installed and fail Zip 
+though now it's fail but there have an resource file that we did earlier so it will continue
+
+if we don't return it will not make any problem because there have anOther check for next step",Logical
+"@Tusher may better change code like following 
+
+prepare a method like  clearStatusWhenInstallationFail() {
+
+if self.suotaBinaryCopyStatus {
+self.removeObserverForOnDisconnectDevice()
+}
+self.suotaBinaryCopyStatus = false
+}
+
+
+call the method self",Logical
+"BadgeNumber 0 will dismiss all the notifications even if some Other module thorough some notifications. You should dismiss only your requested one.
+
+Please check for Other way to dismiss only your module notification.",Logical
+change code like ... if it is SGOOBESequence then do,Logical
+"remove the save method, data will be store with the device info dictionary. Here keep only getSKUcodeValue like 
+
+    func getSKUcodeValue () -> String? {
+        
+        if let wearableInfoDict = UserDefaults.standard.dictionary(forKey: GROUP_GEAR_INFO),
+            let skuCode = wearableInfoDict[SKU_CODE] as? String{
+            SGAppLog("" wearable Serial: \(wearableSerialNumber)"")
+            return skuCode
+        }else {
+            SGAppLog("" Dictionary DATA \(String(describing: UserDefaults.standard.dictionary(forKey: GROUP_GEAR_INFO)))"")
+        }
+        return nil
+    }
+
+
+Note: add  SKU_code value into getGearInfoDictionary method",Logical
+"after resetting cell type , its getting accessory text . that's why we need to reset the accessory type to none.",Logical
+This checking should go to cellForRowAtIndexPath function.,Logical
+"1. Please avoid complex logic inside function param. Debugging in this such case is complex though.
+2. Use guard for serverInfoData and binarySize. Make sure it is greater than 0 to have valid data. Your program should check those conditions under guard and return error if true.",Logical
+"condition is not readable if you use self.suotaBinaryCopyStatus = true it will be more readable.
+or change variable name like isCopyingSuotaBinary",Logical
+"Just to suggest you. You can remove redundant statements while fixing this type of issues.
+
+#if DEBUG != 1
+    // We will not run Fabric, Only if the permission is not granted.
+    if (userAgreement == USER_AGREEMENT_NOT_GRANTED) {
+        DDLogVerbose(@""[SGAppDiagnostics startDiagnosis] No Permission to start Fabric"");
+    }
+    else if (isFabricStarted == NO) {
+        DDLogVerbose(@""[SGAppDiagnostics startDiagnosis] Registering for Fabric Crashlytics Support with Answers"");
+        [Fabric with:@[[Crashlytics class]]];
+        isFabricStarted = YES;
+        return YES;
+    } else {
+        DDLogVerbose(@""[SGAppDiagnostics startDiagnosis] Fabric is already running"");
+    }
+#endif
+    return NO;",Logical
+"You can remove redundant statements as below while fixing this type issues. This is just a suggestion. 
+
+if (gearAppDownloadStatus.packageName != nil) {
+        if (gearAppDownloadStatus) {
+            [downloadInfoListLock lock];
+            [self.downloadInfoList addObject:gearAppDownloadStatus];
+            [downloadInfoListLock unlock];
+            [self notifyDelegate];
+            return YES;
+        }
+    }
+    return NO;",Logical
+It creates a memory leak problem in static analysis. nil cannot be assigned here in a CGSize,Logical
+"if (self) {
+        self.acceptableStatusCodes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(200, 100)];
+        self.acceptableContentTypes = nil;
+}
+return self;",Logical
+I think we not need to assign anOther variable. Previous code is OK. Only to add = in the condition section.,Logical
+these resetting or default settings should be called from a business logic class. not in store class. It only responsible for storing/retrieving/updating the values by calling from business logic class.,Logical
+move this block to end of this class file.,Logical
+Please replace previous DID with new DID in Other code files as well.,Logical
+No need to maintain isDeviceDisconnected variable. Use isWMSConnected function to determine connectivity.,Logical
+"Patch Set 1:
+
+After Completing backend, we will submit this CL. Till then it will be in pending state.",Logical
+"since it is fixed list of IDs, so why it is necessary to loop. you may have valid id list and check if it contains or not?",Logical
+"using map we simply solved this problem, no loop is required now",Logical
+"using map we simply solved this problem, no loop is required now",Logical
+"please, check with if return invalid_id as -1 and UI can handle this properly.",Logical
+"UI will not get widget with widget_id = -1, because we send valid widgets after checking this property in the SGWidgetListResponseData class.",Logical
+Dummy data was using to have some test data if SIM wasn't inserted. Please verify this condition. If no issue found submit the code,Logical
+Yes newAlarm will never be nil.,Logical
+"Patch Set 1:
+
+(3 comments)
+
+You can use different way for this task.
+Like,
+
+array = [sun, mon....] //attributed string array
+
+for 0...6
+{
+if (repeat[I] == 1){
+string = array[I]
+string change color
+
+}
+append to result string
+}",Logical
+"If GDPR == true
+   show Privacy Policy then End User License Agreement
+else
+   show End User License Agreement then Privacy Policy",Logical
+Change logic here also as commented in earlier file.,Logical
+Change logic here also as commented in earlier file.,Logical
+"Please define this magic number.
+Like  static let OptionLimit = 2",Logical
+"The purpose of this function is to update constraints. But we are setting a label's font inside this function. 
+Please set label's font property else where.",Logical
+"Please, re-check why this block of code is missing",Logical
+why need to multiply *1000?,Logical
+Did you sure observer is added for this object? Did it create any problem if observer is not added before ?,Logical
+during progress it's should be false and if occur any error again value should be true. because during updating UI can call the isSuotaUpdateAvailable(),Logical
+"In anOther CL , You have given below comment 
+""isInitialedWatch value for Moden false = First Connection and true = reconnection""
+
+So here is reconnection scenario and it should be true.",Logical
+"Please add else part also like:
+privacyPolicyLabel.textAlignment = .left
+endUserLicenseLabel.textAlignment = .left",Logical
+For any language it was showing text alignment from left.For Arabic it was also showing left alignment.Thats why I think it is aligned as left and I did not add else part.,Logical
+"Patch Set 3:
+
+initial this class to startRequiredClassInitialization of class SGAppInitializer",Logical
+"epoch time should be sec, Please  remove this multiplication",Logical
+These 3 lines are not needed as you put them in else part later. Please remove these lines.,Logical
+"why this is static, since these are private constant values so it can be instance type. if Provider class is static instance then all values will be load once.",Logical
+"only DispatchQueue.main.async block , within  DispatchQueue.global(qos: .background).async this code block. Is it necessary DispatchQueue.global?",Logical
+"in if condition how it works, to set ?? false as default value. break down code in separate simple logic to assign value first and then use in if condition",Logical
+"Patch Set 3:
+
+moden binary has some problem, please don't merge this cl before 100% testing",Logical
+is it static function? why need sgwidget store static functions. it should be instantiated and then use to call func.,Logical
+"90/3 = 30
+and both side is 30 + 30 = 60",Logical
+"as result is any object, we must convert it into boolean.
+The let statement will avoid any crash if it fails to convert.
+
+But as the result field will have a value for share, we can omit this check.
+In that case we will have to force wrap this value.",Logical
+Please give proper try catch check in this function.,Logical
+"if it is same function as in OOBE initsync msg, you may create a util function and use that.",Logical
+"Equality operator (==), returns true for operands whose values are equal. Here do we need to assign ""true"" to smartCardActivation and then return. Or, it is needed to put equality operator here? Please check.",Logical
+We don't need to assign any value to smartCardActivation variable. Just need decision true or false.,Logical
+no need to multiply as it is 0,Logical
+"What's the reason to call removal(). The dictionary of array is just created. 
+Could you try to apply following codes for diclaration;
+var DictArray = [[String: Any]()] 
+or,
+var DictArray = [Dictionary<String, Any>()]",Logical
+"Logic from line 23 to 33 doesn't match with requirement. 
+1. EULA and Privacy Policy are required now.
+2. There can be 1 option
+3. There can be 2 options
+4. There can be >2 options.
+
+Please check.",Logical
+"There should be only one array list of quick settings Otherwise it would create confusion.
+Its getting updated when quick settings are changed in gear side.But then the data  in the UI side is not getting updated. Thats why it should be static.",Logical
+All occurrences of IP address has been replaced with general macro in current patch. (Except in imsprofile.json).,Logical
+"If nobody sends MNO value, then the default value will always be 0, which is an undefined scenario, please fix logic",Logical
+"1. Why there is a semicolon after function name?
+2. CallController is a controller, this doesn't have any knowledge about its caller, like if button pressed or not. 
+Could you please rename it to more meaning full name like, initiate call or make call. also make implement it dynamically like pass the callee information here.",Logical
+"please do not use this macros, pass this infomations from the caller of this class.",Logical
+Please check the logic with Android. I am wondering how it is working in Type 3,Logical
+Logic change for XDM subscribe. for guard condition xdmSubscribe not happen,Logical
+"I am not stopping it. mRegiInfo !=NULL, and mIsSharedListSubscribed == false. So Otherwise return. In previous mIsSharedListSubscribed == true are given thats why code flow go to else condition and return without XdmSubscribe",Logical
+"Right now, three functions are called just to configure the view.
+    - configureWriteCommentView()
+    - setDataAndReloadView()
+    - showViewWithNoLikeCommentMessage()
+
+And in each function viewType is checked several times.
+
+I'd recommend to write only two function. One for commentType and anOther for likeType view and configure the view accordingly.",Logical
+change coding key to map variable name.,Logical
+"this if block can be reduced as follows. Please consider if that would be  more swift like:
+
+groupMembers?.forEach { $0.profileId = groupId }",Logical
+"Since all the UIImage attribute are getting removed from all the entities. I'd recommend not to use ""uploadedImage"" attribute as it is UIImage type.
+
+Try to use ""uploadedImageHash"" Instead.",Logical
+please make an if-else ladder as the current implementation will go through all the statements even after the deviceType is found earlier.,Logical
+please make an if-else ladder as the current implementation will go through all the statements even after the deviceType is found earlier.,Logical
+"This function seems duplicated. Move to Util class.
+
+Also better rename it to fetchProfileImage(fromUrl:withHash:forImageView)",Logical
+"if error exists, imageHash will be nil and we do not need to assign nil to the optional post.postOwnerImageHash var. I think it should be inside an else block.",Logical
+majority of this function is reusable. Either use a private function for common code or use boolean to indicate execution nature,Logical
+please use ImageCompressionQuality.fullSize.rawValue,Logical
+please use ImageCompressionQuality.fullSize.rawValue,Logical
+Check with boolean flag with default circular.,Logical
+"Use named tuple for readability. Check from:
+var fishes = (first:""cod"", second:""dab"", third:""eel"")
+
+https://justanapplication.wordpress.com/category/programming-languages/swift/swift-tuples/swift-tuple-named-values/",Logical
+"error==nil already checked in preceding if block. Best to push this block inside the preceding block.
+
+
+if error == nil {
+    myProfile.profilePicHash = imageHash
+    myProfile.profilePic = imagedata
+    self?.myProfile = myProfile
+    if didRetrieveFromCache == false {
+        SemsLog.debug(message: ""Fetched profile image from server"")
+        do {
+            try CoreDataStorage.sharedInstance.updateByAttribute(dataType: .myProfile, filterBy: MyProfileAttributeNames.profileId.rawValue, with: myProfile.profileId, updateField: MyProfileAttributeNames.profilePicHash.rawValue, with: imageHash)
+        } catch let updateError {
+            SemsLog.error(message: ""Failed to update profilePicHash in Coredata [\(updateError)]"")
+        }
+    }
+}",Logical
+"please add this one in ""isEqual"" function.",Logical
+"this if block can be reduced as follows. Please consider if that would be  more swift like:
+
+groupMembers?.forEach { $0.profileId = groupId }",Logical
+"1. Why there is a ""space"" character in the front of the string? if we need a space in our UI, better to append a space in the string and then set the string in the text field.
+
+2. Please use localized string.",Logical
+"What if group list is nil or empty?
+This will cause indexOutOfBounds exception.",Logical
+please make an if-else ladder as the current implementation will go through all the statements even after the deviceType is found earlier.,Logical
+Check if there is any append function. This may create new arrays.,Logical
+"if this is being used for determining the view type, instead of using boolean use ViewType enum.",Logical
+please make an if-else ladder as the current implementation will go through all the statements even after the deviceType is found earlier.,Logical
+no need to write additional init function. Assign default values to the Other one,Logical
+"if error exists, imageHash will be nil and we do not need to assign nil to the optional post.postOwnerImageHash var. I think it should be inside an else block.",Logical
+majority of this function is reusable. Either use a private function for common code or use boolean to indicate execution nature,Logical
+please use ImageCompressionQuality.fullSize.rawValue,Logical
+please use ImageCompressionQuality.fullSize.rawValue,Logical
+Check with boolean flag with default circular.,Logical
+"Use named tuple for readability. Check from:
+var fishes = (first:""cod"", second:""dab"", third:""eel"")
+
+https://justanapplication.wordpress.com/category/programming-languages/swift/swift-tuples/swift-tuple-named-values/",Logical
+"error==nil already checked in preceding if block. Best to push this block inside the preceding block.
+
+
+if error == nil {
+    myProfile.profilePicHash = imageHash
+    myProfile.profilePic = imagedata
+    self?.myProfile = myProfile
+    if didRetrieveFromCache == false {
+        SemsLog.debug(message: ""Fetched profile image from server"")
+        do {
+            try CoreDataStorage.sharedInstance.updateByAttribute(dataType: .myProfile, filterBy: MyProfileAttributeNames.profileId.rawValue, with: myProfile.profileId, updateField: MyProfileAttributeNames.profilePicHash.rawValue, with: imageHash)
+        } catch let updateError {
+            SemsLog.error(message: ""Failed to update profilePicHash in Coredata [\(updateError)]"")
+        }
+    }
+}",Logical
+"please find a better way with the usage of constants or enums to avoid -1. If it is absolutely needed, please add appropriate NOTE",Logical
+"IdType Shouldn't be nil.
+define Unknown in enum and force user to pass id type",Logical
+"1. Why there is a ""space"" character in the front of the string? if we need a space in our UI, better to append a space in the string and then set the string in the text field.
+
+2. Please use localized string.",Logical
+Check if there is any append function. This may create new arrays.,Logical
+"This is done is several cases. 
+    - ContactProfileManager -> updateMyProfileToCoreData() line: 396.
+    - ContactProfilePresenter -> requestMyProfile()
+
+any better suggestion?",Logical
+please add condition if deleteElevatedHrUUIDList.count > 1,Logical
+"Patch Set 2: Verified-1
+
+Description Validation failed.
+Error: [Feature Name] has invalid value :  Watch_Settings_UI  
+Format: [Title] Apt title for your change [Checking Method] Mention the testing flow [Type] feature (catch-up) or Patch or Feature or Bugfix [Feature Name] Your Feature Name [Self Test Result] Pass",Logical
+check if scrollView == collectionView,Logical
+"Hi, why are we subtracting 100000 from tag? Please comment the code here, its not easily understandable.",Logical
+"in updateUi function when i am creating the badge view, i am identifying them from range 100000 to 100005. rajesh vai told me not to use tag 1 to 6. it may conflicts with UIKit default tag value",Logical
+"There was some common code outside of switch-case block that should not execute for this case. So ""return"" used here instead of ""break"".",Logical
+in model please give it a initializer value (false/ true). make it a boolean type not optional boolean.,Logical
+"Patch Set 1: Verified-1
+
+Description Validation failed.
+Error: [Feature Name] has invalid value :   
+Format: [Title] Apt title for your change [Checking Method] Mention the testing flow [Type] feature (catch-up) or Patch or Feature or Bugfix [Feature Name] Your Feature Name [Self Test Result] Pass",Logical
+"don't declare them in class level. Make all of them variables insside the ""getAllScoreData"" function.",Logical
+"Having so many params in the completion handler is prone to mistakes.
+Instead create a class called ""SHMWearableScoreData"" that contains each score and only include this class in the completion handler.",Logical
+21 should be multiplied by common height factor.,Logical
+10 should be multiplied by common width factor.,Logical
+"You can set image view's properties as follows without writing any function
+
+@IBOutlet weak var imageView: UIImageView!{
+        didSet{
+            imageView.layer.borderWidth = 3.0
+            imageView.layer.masksToBounds = true
+            imageView.layer.borderColor = UIColor.white.cgColor
+            imageView.layer.cornerRadius = imageView.frame.size.width / 2
+            imageView.clipsToBounds = true
+            imageView.contentMode = UIView.ContentMode.scaleAspectFill
+        }
+    }",Logical
+"Patch Set 1: Verified-1
+
+Description Validation failed.
+Error: [Feature Name] has invalid value :   
+Format: [Title] Apt title for your change [Checking Method] Mention the testing flow [Type] feature (catch-up) or Patch or Feature or Bugfix [Feature Name] Your Feature Name [Self Test Result] Pass",Logical
+"this will be SGEsimPrepareNetworkVC... SGEsimRouter class has the all view ids if necessary add there SGEsimViewController in this class you may create more methods as per necessity DRY: Do not Repeat Yourself... remove duplicate to one place and call that method from here same code block is  in SGBackUpRestoreViewControllerOOBE.m why not move this block in method startEsim2ViewFlow, and anOther method for startEsim1ViewFlow in  SGEsimViewController class",Logical
+"if mIsInitText is true, you don't need to set unit text.
+So,
+if(mIsInitText) {
+// just set mMainValueData
+} else {
+// set mMainValueData, if exist each tile data, you can set mMainValueUnit, mSubValueText, mSubValueUnit
+}",Logical
+"if onBannerChange is called multiple, the runnable is called multiple. my question, before calling again, does not need canceling mOpenBannerRunnable ? if onBannerChange is called after onBannerDisable() always, the removing previos runnable is not needed.",Logical
+"if(mMeBanner.getBannerSize() == 0) {
+                setSlidingEnabled(false);
+                setPanelState(SlidingUpPanelLayout.PanelState.EXPANDED);
+            } else {
+                setSlidingEnabled(true);
+                setPanelState(SlidingUpPanelLayout.PanelState.COLLAPSED);
+            }
+
+block is same in openBannerRunnable().
+please make a method not to make duplacte code",Logical
+"do not use mButtonText for secondary button.
+if(!TextUtils.isEmpty(logMultiButtonViewData.mSecButtonDescription)) {
+  //set contentDescription
+}",Logical
+"you have to use tileviewdata.
+if(logMultiButtonViewData.mSecButtonResource != TileViewData.NONE) {
+    mSecImageButton.setImageResource(logMultiButtonViewData.mSecButtonResource);
+} else {
+//set default image
+mSecImageButton.setImageResource(R.drawable.me_data_ic_plus);
+}",Logical
+"You have to use setButtonColorAndStoreDrawable(). As I know, create ripple drawable and keep background drawable to re-use background drawable in setButtonColorAndStoreDrawable(). If anOther button background needed for LogMultiButtonTileView, please this code move to LogMultiButtonTileView.",Logical
+"We don't need to assign default image to tileviewdata
+Remove 74 line code, and just call below code.
+mImageButton.setImageResource(R.drawable.me_data_ic_minus);",Logical
+"it makes strong reference
+
+MeFragment meFragment = weak.get();
+if (meFregment == null){
+return;
+}
+
+mFragment.mMeBanner.getXXX .",Logical
+"spelling mistake :)
+market+turbed.
+
+Also with ""keychain sharing capability must be turned off"" add ""FOR group samsung.account.keychain""",Logical
+"before casting to protocol check for conformity with the protocol.
+
+Also for single call assignment to new variable is not necessary.
+
+Also change casting to (SAAbstractStorage <SAKeychainProtocol>)",Logical
+Better to use anOther macro KEYCHAIN_ACCESS_GROUP as discussed since we change this frequently.,Logical
+"Design ID used as per UX designer.
+
+[??? / Youngmi Kim] - 14:05                 
+In the STMS, SERVICES (Header) was resisgered for Vodafone carrier. 
+Design type and english text, and the meaning (all service lilst) are the exactly same. If possible, please use it.
+
+[??? / Youngmi Kim] - 14:06                 
+==> DREAM_SAC_HEADER_SERVICES_VODA",Logical
+I want to print mAttr is null. It's type is BarGraphAttribute.,Logical
+I want to print mAttr is null. It's type is BarGraphAttribute.,Logical
+Attribute is used only one place within if so it is redundant use like if (getBgBarAttribute() == null) and Other option is use attribute in below bgBarAttrs.add(getBgBarAttribute())====> bgBarAttrs.add(attribute),Logical
+"I meant toString() will be here.But you can separate String builder logic in separate class like helper (metioning util was not proper from me).Whatever, it is not major.",Logical
+More better way to manage checked array is using enum of each T&C as a index of this array. please modify the code in next CL,Logical
+change this spec.According to your render logic 0 is for dotted and any value except zero is for single line,Logical
+Kindly use SocialConstants.defaultContactImage from SocialConstants.swift instead of hard coded values.,Logical
+Kindly use SocialConstants.defaultContactImage from SocialConstants.swift instead of hard coded values.,Logical
+"According to Android logic, we need to set dormantStatus as false whenever we get a server response.
+
+public void onResponse(String response) {
+                LOG.d(TAG, ""sendUserApiForAppLaunch(), onResponse(), "" + response);
+
+                final HomePushLaunchApiResponse responseData;
+                Gson gson = new GsonBuilder().create();
+                try {
+                    responseData = gson.fromJson(response, HomePushLaunchApiResponse.class);
+                    RestrictionManager.getInstance().setState((responseData.restrictProcessing == RESTRICTION_PROCESS_NEEDED) ?
+                        RestrictionState.RESTRICTED : RestrictionState.NONE);
+                    saveRequestTime(System.currentTimeMillis());
+                    //Set dormant status to start auto sync
+                    ServerSyncControl.setDormantStatus(ContextHolder.getContext(), false);
+                }",Logical
+it is not needed to unwrapped after let x = y?,Logical
+Please add javadoc comment which is in develop/5.17 branch.,Logical
+Please remove unnecessary new line,Organization
+"this function is same in two classes, making redundancy, could be merged into one function",Organization
+"This is backend method, I have suggested to take this into one place. Changes will be submitted later by back end",Organization
+"Instead of calling redundant remove observer method, it is better to add logic at the end of this method.
+
+if self.suotaBinaryCopyStatus == false {
+   // Remove observer
+}",Organization
+This label remains hidden always. You could delete the label.,Organization
+move these constant to Constant class.,Organization
+"please, move it to Store class.",Organization
+It will be great if you keep those types code in store class.,Organization
+remove this line save that value into  the device info dictionary,Organization
+"Please give comment for this line (as like 10 MB.). It will be great if you write the number by below way. 
+As like 1 hr to sec --> 1*60*60 sec.",Organization
+OnDisconnect method already exists.,Organization
+create separate method for  this check,Organization
+"no need to store this value, we already keep this value into 
+
+fileprivate var binaryInfoData: SGSuotaBinaryResourceData?
+
+please that object for get binary size",Organization
+remove unnecessary file with next CL,Organization
+"Please do not use implicitly unwrapped optional.
+please initialize uilabel with UILabel()",Organization
+"Please create uilabel beforehand, not  in cell reload",Organization
+What is the reason of keeping Key as localized string. I think key should be independent of language,Organization
+You are using identical name for both method name and local variable.,Organization
+"Patch Set 4:
+
+(3 comments)
+
+You should add log in every overridden method also.",Organization
+"You could remove the objects from this array rather than creating a new instance.
+This type of instruction makes overhead on collecting killed objects.",Organization
+gradually remove the class and use SGGearCapabilityStore for new usage and new features.,Organization
+We should insert log to every method to know whether it gets called or not whenever analysing log files.,Organization
+An instance has been created already. It is better to remove all the elements here rather than creating a new instance.,Organization
+We should insert log to every method to know whether it gets called or not whenever analysing log files.,Organization
+An instance has been created already. It is better to remove all the elements here rather than creating a new instance.,Organization
+We need to use isWearableSupportAdvanceSettingsFeature. Based on its capability we need to show menu.,Organization
+"INVALID_ID is always same for all the objects of class SGWidgetData, that's why declared it here as a constant, but Now moved it to SGWidgetConstants class",Organization
+"Remove print use AppLog()
+THIS SHOULD BE WITH EXACT TAG
+SGAppLog(""UI: HomeTab:  some thing"")",Organization
+"Remove print use AppLog()
+THIS SHOULD BE WITH EXACT TAG
+SGAppLog(""UI: HomeTab:  some thing"")",Organization
+ok I am making closure based function.,Organization
+May be this is duplicate. please check.,Organization
+Do this in a separate method and reuse.,Organization
+Removing new lines will make the code clumsy. Please revert those changes,Organization
+"This also an UI task so I think this also need to take into dispatchQueue.main.
+
+and may be we need to check isShow loading or not if show then hide.",Organization
+You can remove this line of code.,Organization
+"use last parameter as default parameter 
+so that you don't have to write anOther function",Organization
+remove this from here to utility file. All tasing do there,Organization
+All indentation should be corrected.,Organization
+All indentation should be corrected.,Organization
+All indentation should be corrected.,Organization
+"Patch Set 2:
+
+(2 comments)
+
+I will suggest to make ""PI/dependencies/static-analyzer/checker-279/"" build agent dependent rather than making it project dependent. 
+However, unless this is established we can maintain like this.",Organization
+For Gear fit  required to sent time milisecond. NSDate().timeIntervalSince1970  generate second data,Organization
+"please make a separate response handler function. 
+it is very unreadable code. 
+KISS: Keep It Simple and Stupid is good sometimes.",Organization
+You can't access method from extension if it is private. So instead of private it is better to use fileprivate for util methods.,Organization
+Network reachability Validation has been moved to didReceivedSuotaBinaryInfo delegate method. Reachability will be checked just before calling the sendBinaryDownloadRequest method.,Organization
+we need to use alamofire wrapper. Need to cherry-pick Alamofire wrapper CLs from dev_gearfit to dev_gears. Do it in next CL.,Organization
+"Those part should not be called from this function. This function only check is weather update available or not and based on this will send notification. 
+When UI gets that notification that time UI will call installWeatherApp method. So that part should be called from installWeatherApp.",Organization
+ok I am removing this function.,Organization
+"According to iOS developer guide, Each call to this method is always preceded by a call to the tableView:dragSessionWillBegin: method. 
+Did we implement tableView:dragSessionWillBegin: too? Also the logic to maintain the boolean variable ""needToLoadDraggedCell"" is not clear. On which tableview delegate methods we need to set the variable's value. How did you figure out this. What if we need to add a new tableview delegate? At that time, what should be the value of ""needToLoadDraggedCell""? Also, did you check, if cellForRowAtIndexPath is calling after each drag and drop without your change?
+Lastly, is the issue root cause is properly identified?",Organization
+"Q. Did we implement tableView:dragSessionWillBegin: too?
+Ans: No, we are not implementing this method because we have nothing to do during drag session began.If we implement then it will be called before.
+
+Q. is the issue root cause is properly identified?
+Ans: Before we need to know our problem scenario, that is when we drag a cell and scrolling down so that dragged cell's position is gone up, on that case the preview was not shown but if we again scrolling up with the dragged cell to it's previous position the preview is shown. When we leave the dragged cell during the case of not showing preview, the dragged cell is not updated and this is the issue.
+Now the preview showing is handled by iOS. So we can not control it.  
+
+Q.How did you figure out where ""needToLoadDraggedCell"" should be set?
+Ans: For resolving this issue we need to update the specific dragged cell during the occurrence of this issue at the end of the drag session.
+
+dragPreviewParametersForRowAtIndexPath this method is called when we drag the cell and leave the cell at a place where we will not drop it (if it is implemented ).
+moveRowAtIndexPath is called when we successfully drop a cell.
+
+After this two methods tableView:dragSessionDidEnd this method called.So we are setting false in this two methods. If the issue situation occur dragPreviewParametersForRowAtIndexPath this method will not be called so on that case we update the cell in tableView:dragSessionDidEnd method.",Organization
+This method seems to get called on end of a drag. The table view should be reloaded on end of a drag. You can skip detecting to reload using needToLoadDragCell boolean. Please check.,Organization
+is it necessary to be static? it seems not need to be single shared instance. it can be initiated and then use.,Organization
+"This function may call several times. So add observer will be also called several times. So that time may be you will get the notification multiple times. 
+
+Ref link :
+https://stackoverflow.com/questions/7751191/how-to-stop-the-observer-in-nsnotification-to-called-twice",Organization
+"initial capex message are same and end didReceiveInitSettingsResponse we have make a decision based on connection and reconnection
+
+if isReconnectingModen then we post only notification Otherwise call processNextStep
+
+OOBE and reconnection step working fine",Organization
+"Patch Set 5: Code-Review+1
+
+Checked items :
+1. Add new init methods to handle new error types. (User try to add alarm on same time)
+2. Change variable name.",Organization
+Please give a comment about when this init method need to  be used.,Organization
+Please give a comment about when this init method need to  be used.,Organization
+"Every module should have a class for localization text.
+so that, the one who will apply DID will check only one place but not whole class to find out DID",Organization
+"if this class is solely responsible for TipsCard weather provider, then rename it as SGTipsCardWeatherProvider or SGTipsCardWeatherManager or better name.",Organization
+"This is not solely responsible for TipsCard. Already ayub vai have  given  suggestion regarding this and suggest us to give name. 
+So not want to change this name.",Organization
+it may be rename as SGTipsCardWeatherInstallationHandler,Organization
+This will use to send file. SGWearableManagerService have no method to send file.,Organization
+"if it is necessary in future, then keep it code snippet  in commented block. and just use the necessary code now.",Organization
+"there have a card that will be show if  if have any update May we can check  only here 
+SGUtils.isConnectedWithNetwork()",Organization
+"please, do not use Alamofire directly. if necessary use HttpCommunicationProtocol and SGAlamofireAdapter... class",Organization
+"1. Don't use _ in the name.
+2. Please make a store class for that and give api which will use from both UI and here. Others class shouldn't know about internal userDefaults key.",Organization
+KISS: keep it simple and stupid is sometimes more readable code. do not need to be  clumsy inline code. this smart code is not readable and maintainable as well as for debugging and bug fixing.,Organization
+"Duplicate code block. Just add "" cell.cellType = cellHeaderViewTypePowerSaverOn"" in the existing else block.",Organization
+why it is needed connected device type here. is not possible without app with new enum. (SGUtils.isGalaxyFitDevice()) can be used keeping in a variable.,Organization
+We should not print log here as this method will invoked many times for a scroll attempt. I used the offset value that the collection view is providing. Did not make any calculation on it.,Organization
+this line should be included into SGUtils.isConnectedWithNetwork(),Organization
+"initializeVariable method is called again before calling requestBatteryInfo. Please check properly, if initializeVariable method actually needs to be called.",Organization
+I think this check is not sufficient. We already have checked that if we give value 0 for responseDict[SGNotificationsParams.AppName] than it creates crash. But you didn't give that check here.,Organization
+"Patch Set 3: Verified+1 Code-Review+1
+
+Checked Item:
+utils method to convert weather icon number for 4 CP types.",Organization
+"plz, move this function in each provider class. it is not util function.
+this icon mapping is specific to content provider.",Organization
+Same function as in OOBE.Will create a util function and  Update in next CL,Organization
+Create a separate function to create this XML file.,Organization
+"Patch Set 1: Verified+1
+
+in SGOOBEPairingOngoingViewController.swift file 
+pls unComment the comment line in comment out upper code in
+moveToTermsAndCondition function",Organization
+"As ""override func updateViewConstraints()"" is handled by iOS , I think using of  it is more better.",Organization
+"according to apple doc,
+You should only override this method when changing constraints in place is too slow, or when a view is producing a number of redundant changes.
+https://developer.apple.com/Documentation/uikit/uiviewcontroller/1621379-updateviewconstraints",Organization
+Please check if viewWillAppear need this method?,Organization
+"In these methods, every time quickSettingsListFromGear this array is empty and again filling. It seems it is a costly operation for many elements. Can you use any Other alternative way?",Organization
+"Maintaining the array is the main concern here to update the table view 
+Emptying and filling the array are mandatory to calculate the number of section.
+I'll try to optimise the logic in the next CL.",Organization
+"1. Avoid using magic numbers. Can we ""let""/""#define"" this number. 
+2. can we use .round(.up) as ceil function. Please check.",Organization
+"https://stackoverflow.com/questions/25770932/should-freopened-stdout-be-closed 
+freopen does not need closing",Organization
+Remove unnecessary function.,Organization
+Please add super init method call,Organization
+Declare updateInitialUEConfig flatbuffer wrap function,Organization
+Implement InitialUEConfig flatbuffer wrap function & set the times values,Organization
+Implemented updateInitialUEConfig flatbuffer wrap function,Organization
+Get response of Common_Confiq & send to loginviewController through processCompleted delegate function,Organization
+Start UpdateInitialUEConfig functionality,Organization
+"please add this one in ""isEqual"" function.",Organization
+"instead of assigning empty string, use decodeIfPresent and apply nil coalescence
+(??) and assign """"",Organization
+"1. Why there is a ""space"" character in the front of the string? if we need a space in our UI, better to append a space in the string and then set the string in the text field.
+
+2. Please use localized string.",Organization
+"Filter should be added in the Manager/Helper side.
+Not in the ViewController.
+
+Please Modify accordingly.",Organization
+"We don't need an extra init function.
+Just add the eventName and eventDescription in the previous init with default nil assignment.",Organization
+This overridden function isn't doing anything. Remove.,Organization
+remove blank space.,Organization
+remove trailing_closure_violation,Organization
+"What if group list is nil or empty?
+This will cause indexOutOfBounds exception.",Organization
+should a delegate be set here. This method will be called multiple times.,Organization
+Also move to separate method like 'getDeviceIcon' or 'setupDeviceIcon',Organization
+Better to rename this method to memberPicker. and Change the delegate to MemberPickerDelegate.,Organization
+"if this is being used for determining the view type, instead of using boolean use ViewType enum.",Organization
+"this is to differentiate between users election view and device selection view. 
+ViewType is used to detect view  controllers.",Organization
+please try to avoid force unwrapping,Organization
+"""didTapSegmentControl"" seems more appropriate.",Organization
+"""didTapBackButton""/""onBackButtonTap"" seems more appropriate.",Organization
+this function doesn't need to be called multiple times. Back button won't change. So prepare once and assign to leftBarButton when necessary.,Organization
+please move guard let to the top of the function,Organization
+Segregate the method. It's large.,Organization
+remove trailing spaces.,Organization
+"Patch Set 4: Verified+1
+
+(1 comment)
+
+Fixed Merge conflict and removed remaining deinit functions",Organization
+Deinit fuction is to be removed and given in anOther commit,Organization
+Similar function has been used in many Other places. That's why it will be done in next CL.,Organization
+This closure should be set as completionTask of ThreadWorker.,Organization
+"this method should not be here, View is directly accessing ImageCacheStorage rather FeedbackManager should communicate with ImageCacheStorage.",Organization
+Same comment applies here. Closure should be set as completionTask,Organization
+"Move to separate method like handleKeyboardAppearEvent, handleKeyboardDisappearEvent.",Organization
+"please search this file for force unwrap cases and see if they can be avoided by using guard let. If there's a reason to use force unwrapping, please add appropriate NOTE for future convenience",Organization
+"please try to avoid force unwrapping and if possible, introduce constants to replace string literals",Organization
+"please try to avoid force unwrapping and if possible, introduce constants to replace string literals",Organization
+please ensure that it will not be nil before force unwraping,Organization
+"function name says insertMember. But this function is doing something else.
+Check again.",Organization
+"Instead of database, use 'forceDataFromServer' check 'requestFeedbackCounts' method in contact profile manager.",Organization
+I think. this transition should be turned off if retrieved from core data as the view will load immediately. Please consult with UX.,Organization
+"Right now, three functions are called just to configure the view.
+    - configureWriteCommentView()
+    - setDataAndReloadView()
+    - showViewWithNoLikeCommentMessage()
+
+And in each function viewType is checked several times.
+
+I'd recommend to write only two function. One for commentType and anOther for likeType view and configure the view accordingly.",Organization
+"These are not public methods, check the MARK comment plz.",Organization
+"We don't need an extra init function.
+Just add the eventName and eventDescription in the previous init with default nil assignment.",Organization
+remove trailing_closure_violation,Organization
+should a delegate be set here. This method will be called multiple times.,Organization
+Also move to separate method like 'getDeviceIcon' or 'setupDeviceIcon',Organization
+"this is to differentiate between users election view and device selection view. 
+ViewType is used to detect view  controllers.",Organization
+"""didTapSegmentControl"" seems more appropriate.",Organization
+"""didTapBackButton""/""onBackButtonTap"" seems more appropriate.",Organization
+this function doesn't need to be called multiple times. Back button won't change. So prepare once and assign to leftBarButton when necessary.,Organization
+either rename to defaultBackButtonImage or rename the rest without Image suffix,Organization
+please move guard let to the top of the function,Organization
+Remove feedHeaderView prefix. All variables are for this view.,Organization
+Segregate the method. It's large.,Organization
+"self is not mandatory here and IDE's color coding would suffice to indicate if it is a member variable or a function variable. However, this format has been used in all APIs that has the definition of a handleSuccessResponse(data: Data) function as this would adds further to readability at the expense of increased verbosity. As such this refactoring, if necessary, would be too extensive and out of the scope of this commit.",Organization
+"self is not mandatory here and IDE's color coding would suffice to indicate if it is a member variable or a function variable. However, this format has been used in all APIs that has the definition of a handleSuccessResponse(data: Data) function as this would adds further to readability at the expense of increased verbosity. As such this refactoring, if necessary, would be too extensive and out of the scope of this commit.",Organization
+Try to pass image view and move the function to Util class. Reduce duplicated codes.,Organization
+Similar function has been used in many Other places. That's why it will be done in next CL.,Organization
+"This function seems duplicated. Move to Util class.
+
+Also better rename it to fetchProfileImage(fromUrl:withHash:forImageView)",Organization
+"this method should not be here, View is directly accessing ImageCacheStorage rather FeedbackManager should communicate with ImageCacheStorage.",Organization
+"> this method should not be here, View is directly accessing
+ > ImageCacheStorage rather FeedbackManager should communicate with
+ > ImageCacheStorage.
+
+Good job, Marjan..",Organization
+"Move to separate method like handleKeyboardAppearEvent, handleKeyboardDisappearEvent.",Organization
+please check if it violates trailing closure.,Organization
+please check if it violates trailing closure.,Organization
+"please search this file for force unwrap cases and see if they can be avoided by using guard let. If there's a reason to use force unwrapping, please add appropriate NOTE for future convenience",Organization
+Please think of a way to avoid forced unwrapping,Organization
+"please try to avoid force unwrapping and if possible, introduce constants to replace string literals",Organization
+"please try to avoid force unwrapping and if possible, introduce constants to replace string literals",Organization
+please ensure that it will not be nil before force unwraping,Organization
+"function name says insertMember. But this function is doing something else.
+Check again.",Organization
+"Instead of database, use 'forceDataFromServer' check 'requestFeedbackCounts' method in contact profile manager.
+
+We may change databases, list may come from files, or Other storages. So, app doesn't need to specify that.",Organization
+"Instead of database, use 'forceDataFromServer' check 'requestFeedbackCounts' method in contact profile manager.
+We may change databases, list may come from files, or Other storages. So, app doesn't need to specify that.",Organization
+Execute the worker here. And change the method name to FetchAndShowMember(),Organization
+"please add this one in ""isEqual"" function.",Organization
+I think. this transition should be turned off if retrieved from core data as the view will load immediately. Please consult with UX.,Organization
+Add TODO for moving retrieval from willAppear as this method will be called for many scenarios.,Organization
+"Right now, three functions are called just to configure the view.
+    - configureWriteCommentView()
+    - setDataAndReloadView()
+    - showViewWithNoLikeCommentMessage()
+
+And in each function viewType is checked several times.
+
+I'd recommend to write only two function. One for commentType and anOther for likeType view and configure the view accordingly.",Organization
+"instead of assigning empty string, use decodeIfPresent and apply nil coalescence
+(??) and assign """"",Organization
+"this if block can be reduced as follows. Please consider if that would be  more swift like:
+
+groupMembers?.forEach { $0.profileId = groupId }",Organization
+"Filter should be added in the Manager/Helper side.
+Not in the ViewController.
+
+Please Modify accordingly.",Organization
+"We don't need an extra init function.
+Just add the eventName and eventDescription in the previous init with default nil assignment.",Organization
+This overridden function isn't doing anything. Remove.,Organization
+should a delegate be set here. This method will be called multiple times.,Organization
+please make an if-else ladder as the current implementation will go through all the statements even after the deviceType is found earlier.,Organization
+Also move to separate method like 'getDeviceIcon' or 'setupDeviceIcon',Organization
+Better to rename this method to memberPicker. and Change the delegate to MemberPickerDelegate.,Organization
+"if this is being used for determining the view type, instead of using boolean use ViewType enum.",Organization
+"this is to differentiate between users election view and device selection view. 
+ViewType is used to detect view  controllers.",Organization
+please make an if-else ladder as the current implementation will go through all the statements even after the deviceType is found earlier.,Organization
+please try to avoid force unwrapping,Organization
+"""didTapSegmentControl"" seems more appropriate.",Organization
+this function doesn't need to be called multiple times. Back button won't change. So prepare once and assign to leftBarButton when necessary.,Organization
+please move guard let to the top of the function,Organization
+no need to write additional init function. Assign default values to the Other one,Organization
+Is there any benefit in having tagged user array nullable? If not make it mandatory and assign empty list [ ] as its default value,Organization
+Segregate the method. It's large.,Organization
+"This function seems duplicated. Move to Util class.
+
+Also better rename it to fetchProfileImage(fromUrl:withHash:forImageView)",Organization
+"this method should not be here, View is directly accessing ImageCacheStorage rather FeedbackManager should communicate with ImageCacheStorage.",Organization
+"> this method should not be here, View is directly accessing
+ > ImageCacheStorage rather FeedbackManager should communicate with
+ > ImageCacheStorage.
+
+Good job, Marjan..",Organization
+Same comment applies here. Closure should be set as completionTask,Organization
+Please look at the previous comment about this method.,Organization
+Please look at the previous comment about this method.,Organization
+Modify in image util as per discussion to remove duplicate codes.,Organization
+Modify in image util as per discussion to remove duplicate codes.,Organization
+Modify in image util as per discussion to remove duplicate codes.,Organization
+this initial value will be overwritten at the bottom in if/else condition which will cause dead store error in static analysis.,Organization
+Will it be better to Extend this CareGraph for BGGraph and override the few methods that need to be modified instead of adding checks in common file? what is your opinion??,Organization
+I will try to extend this.,Organization
+"The protocol method is generic to every tracker (weight , stress, HR, BG). That's why I used the first and second name. 
+Let me know your feedback",Organization
+Will it be better to Extend this CareGraph for BGGraph and override the few methods that need to be modified instead of adding checks in common file? what is your opinion??,Organization
+I have override the required method and did the bp related work in inherited class.,Organization
+"firstly, here value is passed to controller property where is it should passed to interact property.
+
+secondly. property of interactor is access through the controller.interactor. it should not be like this.  latestBpData should place in the interaction dataStore and then connect that dataStore with the router dataStore. then you can access the interactor property by the dataStore property of router",Organization
+"We already have this same code in UserInformationViewcontroller, right? 
+Please make common class to use same functionality in different view",Organization
+"We already have this same code in UserInformationViewcontroller, right? 
+Please make common class to use same functionality in different view",Organization
+"We already have this same code in UserInformationViewcontroller, right? 
+Please make common class to use same functionality in different view",Organization
+"We already have this same code in UserInformationViewcontroller, right? 
+Please make common class to use same functionality in different view",Organization
+Not removing as Shaafi used this to draw circle in Heart View Controller,Organization
+"eventValue should be of type ""OttFileEventEnum"" not Int64",Organization
+i recommend to call super.viewWillDisappear(animated) here,Organization
+no calling to presenter to controller. i think its because controller call it from viewWillDisappear.,Organization
+"try to remove these red mark from the file. 
+to find go Editor and show invisible from Xcode menu",Organization
+"normally .navigation button action goes in SHTBloodPressureViewController.
+do you put a new navigation button for this track page ?
+
+Need to check this.",Organization
+"avoid force unwrapping of zippedEncodedString. If zippedEncodedString is nil, you can return nil immediately.",Organization
+why are you calling method of a VC and subscribing to an internal variable of the VC? The VC can be destroyed anytime when it is pop'ed out the navigation stack,Organization
+"Patch Set 1: Verified-1
+
+Description Validation failed.
+Error: [Feature Name] has invalid value :   
+Format: [Title] Apt title for your change [Checking Method] Mention the testing flow [Type] feature (catch-up) or Patch or Feature or Bugfix [Feature Name] Your Feature Name [Self Test Result] Pass",Organization
+"Patch Set 1: Verified-1
+
+Description Validation failed.
+Error: One or more mandatory fields are missing 
+Format: [Title] Apt title for your change [Checking Method] Mention the testing flow [Type] feature (catch-up) or Patch or Feature or Bugfix [Feature Name] Your Feature Name [Self Test Result] Pass",Organization
+"you can enter group here, and leave group in the completion handler. In that case, no need to pass group around to Other funcs.",Organization
+why is this method disabled? This is the one which requests latest data from server.,Organization
+"Coding Key:
+@SerializedName(""timestamp"")
+private long mTimestamp;
+@SerializedName(""timeOffset"")
+private int mTimeOffset;",Organization
+"Coding Key:
+
+    @SerializedName(""title"")
+    private String mTitle;
+    @SerializedName(""description"")
+    private String mDescription;
+    @SerializedName(""startTime"")
+    private long mStartTime;
+    @SerializedName(""endTime"")
+    private long mEndTime;
+    @SerializedName(""timeOffset"")
+    private long mTimeOffset;
+    @SerializedName(""state"")
+    private int mState;
+    @SerializedName(""startScore"")
+    private List<Integer> mStartScoreList;
+    @SerializedName(""endScore"")
+    private List<Integer> mEndScoreList;
+    @SerializedName(""smiley"")
+    private List<Accomplishment> mAccomplishmentList;",Organization
+"Coding Key:
+
+    @SerializedName(""lastKey"")
+    private String mLastKey;
+
+    @SerializedName(""sessions"")
+    private List<Session> mSessionList;",Organization
+ServerResultDeleget should be renamed as ServerResultDelegate,Organization
+"DRY: Do not Repeat Yourself... remove duplicate to one place and call that method from here 
+same code block is  in SGBackUpRestoreViewControllerOOBE.m
+
+why not move this block in method startEsim2ViewFlow, and anOther method for startEsim1ViewFlow in  SGEsimViewController class",Organization
+please remove double pushViewController,Organization
+"DRY: Do not Repeat Yourself... remove duplicate to one place and call that method from here 
+same code block is  in SGBackUpRestoreViewControllerOOBE.m
+why not move this block in method startEsim2ViewFlow, and anOther method for startEsim1ViewFlow in  SGEsimViewController class
+
+call these method from here",Organization
+please remove double pushViewController,Organization
+"DRY: Do not Repeat Yourself... remove duplicate to one place and call that method from here 
+same code block is  in SGBackUpRestoreViewControllerOOBE.m
+why not move this block in method startEsim2ViewFlow, and anOther method for startEsim1ViewFlow in  SGEsimViewController class",Organization
+please remove double pushViewController,Organization
+"DRY: Do not Repeat Yourself... remove duplicate to one place and call that method from here same code block is  in SGBackUpRestoreViewControllerOOBE.m why not move this block in method startEsim2ViewFlow, and anOther method for startEsim1ViewFlow in  SGEsimViewController class",Organization
+"""socialMainViewController"" or ""socialMainScreenViewController"" seems more convenient to me.",Organization
+keep one convenience init(),Organization
+it may not necessary to set... method... you can use var property1 {set{} get{}},Organization
+"may not need setter type func, instead use var property with set get",Organization
+"Vai, I need a discussion regarding the specification of asynchronous device activation.",Organization
+rename it as SGEsimSelectActivationMethodNeworkSetupViewController,Organization
+"why did you call twice?
+origianl cade calls thread start. it is failed if the thread is running. but your revision is always calls twice.
+one of reason to make thread is for launching time optimization. the methods in initial thread are not to releation to show dashboard directly so we calls it in seperate thread.
+if you want to use handler, it should call once and do not struggle app launch.",Organization
+Follow Other name patterns. Append View/NavigationController,Organization
+use commonUtils.getFullName() to build the name,Organization
+This will not set proper value in case of async calls in getDummy() method.,Organization
+"The ID should be in Constants file.
+Define""LocalizationConstants.swift"" file in common folder.
+Give class name StringIDs.
+
+Place empty string for comment,",Organization
+Don't need to create anOther key for KS feature. We should use FEATURE_APP_SERVER for KS server change because message/push test uses KS userID.,Organization
+"WebView should not be here.
+UI components should be in UI. method / delegate should be used to separate the responsibility between class",Organization
+"as in the weight tracker voc there is a data in 1970, so there might be a possibility that timestamp got here is wrong, so i add this checking.",Organization
+remove this code to SGEsimSettingsProvider - saveProfileInfo(...) or if necessary create a separate method class in esim module,Organization
+"@Mouinul: The variable name seems have a typo mistake. Also, could you please clarify difference between heartRateAvarageTo and heartRateAvaerageTo2?",Organization
+"You have to use color data
+mDataTextColor -> mMainValueData, mSubValueText
+mUnitTextColor -> mMainValueUnit, mSubValueUnit
+color of unit text can be set by tile data.",Organization
+"if(mIsInitText) {
+  // just set mMainValueData
+  // You don't need to set mMainUnit, mSubValue, mSubUnit
+} else {
+  // set mMainValue, if exist tileData, set mMainUnit, mSubValue, mSubUnit
+}",Organization
+"these values will be set in case of multiview because contentview has value, numerical data is not set in super class.",Organization
+"these values will be set in case of multiview because contentview has value, numerical data is not set in super class.
+Super class sets either one and not both.",Organization
+"extracted is not correct function name. Please rename it.
+Also put each param in separate line.",Organization
+please add a TODO comment here for accessing phone number with checking as contacts can be created without phone numbers.,Organization
+After calling callback please return from this method.,Organization
+This callback should not be called here as there might be Other containers from which contacts could be fetched. So call this after completing for all containers,Organization
+"This ViewController title will be translatable. But if we use a constant value, it'll not support the translation.
+
+For now it's better to use a hard coded String for the title with a TODO comment",Organization
+"commentCountView is actually a UILabel.
+
+better to rename it as commentCountLabel. Kindly check the similar occurrence too",Organization
+"As cell will be differ for each Post Type, it's better to bind the cell layout within the condition. Also in this case, it's been bind to feedTableViewCellXib twice. once in the function main body and anOther time within the condition.",Organization
+"footerView.commentCountView.text = """"
+is common for both condition.
+
+Kindly optimize it",Organization
+getAppList functions return array of download status. Either function name or the return type should be changed.,Organization
+We don't need to use Main Queue as its not sure from back-end that if there any UI update in this delegate.,Organization
+"Please check whether it's possible using class method.
+I think, we don't need singleton here",Organization
+If we use class method then delegate method does not work here.I have tested it.,Organization
+Now mail composer object will be created only once in the life time of this view controller,Organization
+"Please check for nil before calling callbacks or check if it can be forced for not nil.
+
+Also change in the above method.",Organization
+"Should selectedProfile be nil in any condition?
+I think selectedProfile can not be nil. In that case we better use the force unwrap option.
+
+Check it later. No need to change right now.",Organization
+"why assign minus resource to mButtonResourceId?
+This is unused code, because mButtonResourceId is used in super.setContents().",Organization
+Maintain a single empty line in between two consecutive method.,Organization
+Maintain a single empty line in between two consecutive method.,Organization
+Maintain a single empty line in between two consecutive method.,Organization
+Maintain a single empty line in between two consecutive method.,Organization
+Insert one empty line in between two consecutive method,Organization
+"Removing ternary operator shows result as 1 or 0. So if we want to show the result, we must use the current String form.",Organization
+"As per PL, we are supposed to process original entities data in presenter to show in View.  Please check if this processing code should be done in entities class or in presenter class as per View requirement. 
+
+Except this decision, it seems good.",Organization
+"This is also generated automatically by android studio. 
+It is more proper to keep the field name in it's method. 
+But, here as you commented, the method name is a little bit weired. 
+So, I will modify it to getVisibility.
+Thanks.",Organization
+We should have brief description of each class and properly and method,Organization
+"Follow the same parenthesis convention for all the if conditions
+i.e. in the same line or in the new line.",Organization
+"Follow the same parenthesis convention for all the function and classes.
+
+i.e. in the same line or in the new line.",Organization
+"Also, let's not make functions public. Because default is internal. Which is ok for our project.",Organization
+these register func are private to this class... so add private access specifier keyword,Organization
+use SGLogger.log ... or add new methods as necessary,Organization
+"<color name=""home_dashboard_tile_title_color"">#162d41</color>
+This value is in colors.xml of Home project.
+If you need this value in both project, please move to CommonRsc/res/vlaues/colors.xml",Organization
+"Then this method will return true, Otherwise false.",Organization
+"in iPhone XR Landscape mode the last footer text overlaps with cell, so have increased the top padding for XR [P.S: XS does not produce this issue]",Other
+"there should be statement under if expression. So either delete if expression or set flag variable to false
+
+Also add comment in every CL",Other
+"If possible, consider using Delegates instead of Notification in next iteration.",Other
+"Patch Set 1:
+
+Description text should be ""force foot install"" -> force FOTA install/installation",Other
+I think IS_FORCE_FOTA_INSTALLATION_ENABLED is good sound than IS_FORCE_FOTA_INSTALL_ENABLED,Other
+The given name explains itself enough.,Other
+I think CELL_FORCE_FOTA_INSTALLATION is good sound than CELL_FORCE_FOTA_INSTALL,Other
+The given name explains itself enough.,Other
+"Patch Set 2: Code-Review+1
+
+Checked Item:
+
+Add log on weather module.",Other
+You are printing wrong (opposite) info. Those are not required here.,Other
+"please, remove this protocol and file.",Other
+"Patch Set 1:
+
+If any Other page require to handle this event, you can add these changes after analyzing more in future",Other
+I think you can define this via constant.,Other
+Its just for dummy purpose to have some value for TLV. May change later.,Other
+Please keep weather package name only single place.,Other
+"please, make it proper cases",Other
+"Patch Set 3: Code-Review+1
+
+Checked Items:
+1. Reset function.
+2. nil check on several functions.",Other
+Should be modelNumber.,Other
+May be it should be getGearModelNumber().,Other
+Why using redundant code?,Other
+Is power saving ON condition checked?,Other
+PSM checked inside individual cell block before this check.,Other
+please update this,Other
+"Patch Set 3: Verified+1 Code-Review+1
+
+Check items :
+1. Update spec.
+2. Update max size.",Other
+"Patch Set 1:
+
+Plz correct commit message problem description.",Other
+What is the definition of 1 and 0 here. Can we use some variable/macro?,Other
+You need to implement onConnect and onDisconnect delegate methods as well. Please implement.,Other
+"Patch Set 1: Code-Review+1
+
+@Mahmud , Please merge your dev_gears CL into fit model in future but code base should be same on both branch.",Other
+"Patch Set 2: Verified+1 Code-Review+1
+
+Checked Item:
+1. Refactor icon_number_converted function.",Other
+Former version should be 1.8.19013103,Other
+Please mark this texts as //Need DID,Other
+Please use SGAppLog.,Other
+"As this is main_gearfit branch ,I will give separate refactoring CL later in dev_gearfit",Other
+"as this is main_gearfit branch , I will give separate refactoring CL later in dev_gearfit",Other
+"as this is main_gearfit branch , I will give separate refactoring CL later in dev_gearfit",Other
+"as this is main_gearfit branch , I will give separate refactoring CL later in dev_gearfit",Other
+Why DID for Cancel is being included here?,Other
+Please add some log here.,Other
+please remove unwrapped optional,Other
+"Patch Set 3: Verified+1 Code-Review+1
+
+Check item:
+1. Remaining time calculation for alarm.",Other
+We can use let  instead of var.,Other
+The value should be localised. Please check.,Other
+"Patch Set 4: Code-Review+1
+
+Checked Item:
+1. Update alarm date with current date + hr + min.
+2. One Logical check.",Other
+Please check the spelling,Other
+use SGAppLog(...),Other
+use SGAppLog(...),Other
+"why it's name is gearManager ? what type of variable it is? gearManager name is generic, please use specific variable name with purposeful meaning.",Other
+why SGAlarmWearableCommandProtocol? this name should be changed to better one for understanding its purpose.,Other
+ok I will change it in my next CL,Other
+"from which class this notification will be broadcast/post, when received this debug_log msg request?",Other
+Doesn't SGWearableManagerService  post whatever we receive from Connection layer?,Other
+"why R365? Moden Lite is R375, Moden is R370",Other
+why it is static?,Other
+"now we will use map for widget id also, like Other widget info maps",Other
+Use  CARD_SETTINGS_GROUP_SAMSUNG_HEALTH,Other
+use AlamofireAdapter class to call http request.,Other
+remove alamofire,Other
+remove alamofire call directly.,Other
+what will be the handler value for Error case ?,Other
+I will also handle error.I am updating in my next patch,Other
+What will be handler value for this case ?,Other
+Please remove this.,Other
+Please remove this.,Other
+"Pleas correct this to ""Down""",Other
+"If you don't get any data, put it as "" "".",Other
+Do you need this variable? please check if not then remove.,Other
+do you need this variable?,Other
+is this value ok?,Other
+Is this number localized?,Other
+this is localized in 351 number line in this file,Other
+why we need this here?,Other
+It should be ON.,Other
+This should be OFF.,Other
+Should be OFF.,Other
+Please place this script at root level,Other
+"Change version to ""1.5""",Other
+Is it ok to remove from this file?,Other
+variable name can be GALAXY_FIT_DEVICE_CARD_ORDER. Please consider.,Other
+please initialize with empty dictionar( [:] ) for future warnings/errors,Other
+you can ignore this file,Other
+you can ignore this file,Other
+Remove this text need DID,Other
+Remove this text need DID,Other
+Apply DID,Other
+Why do we need to upload this file. It should be a blank report and CI system should create it automatically.,Other
+Is it fixed id? what is the purpose of this id ?,Other
+"Patch Set 1:
+
+I could not reproduce this issue with latest pulse binary SA9. Please check this fix again.",Other
+"Patch Set 1: Code-Review+1
+
+I checked with your change. That's why I could not reproduce the issue.",Other
+You can use SGAppLog.,Other
+You can also add mnc value. It will be helpful for future debug.,Other
+please update commit message,Other
+"Put """" here;",Other
+Change logic here.,Other
+make same convention. either UPPER or lower case.,Other
+"Can you tell me what is the reason to remove rechabilty code from here ?
+
+I have checked sendSuotaBinaryDownloadRequest() function and internally this function have network call.",Other
+Remove this.,Other
+Is it reconnect or connect.,Other
+need to use AlamofireAdapter from dev_gearfit,Other
+"if return type if void,  then why this keyword",Other
+ok I am moving this codes in installWeatherApp,Other
+Please give a line break here.,Other
+please give a line break.,Other
+Please make this function private.,Other
+> Please make this function private.,Other
+It was OK. I mean -1.,Other
+Mahmud will give refactor CL for those.,Other
+"Please check, if this change is necessary in project file.",Other
+"Patch Set 1:
+
+I accidentally merge it. @Pulak: Please check if project file change is needed or not ?",Other
+Is this change required?,Other
+"Patch Set 5: Code-Review+1
+
+New Check item:
+1. project file changes.",Other
+For future debug purpose need to print this dictionary value.,Other
+please check is it call one time or more than one time for any settings change,Other
+Unnecessary change.,Other
+Unnecessary change.,Other
+"Why this appLog contain name ""junaid""?",Other
+"remove this type of text ""we are... "" 
+instead wearable will send the required widget valid IDs
+or better text.",Other
+"AppIconPath naming seems like path to physical storage. But here we are using resource name as icon. 
+
+Suggesting name to DefaultAppIcon instead of AppIconPath",Other
+Rename it to MessageAppIcon,Other
+Are Phone and SMS only defaults apps?,Other
+Appname is Message. Please rename it to message_bundle_id,Other
+"is not OOBE and reconnection steps different? it is always calling OOBE next steps. then how it will work in reconnection scenario.
+Please, test all the OOBE and reconnection scenarios to ensure it is working correctly.",Other
+Can use CamelCase convention.,Other
+You can make it AlarmDate.,Other
+I think you can remove this line or can print the dictionary in this line.,Other
+NSInteger is defined in ruction definition in Other file. But primitive data type Int is used. Both should be same. Please check.,Other
+What does this right button represent? It should have a proper name.,Other
+Please name it as actionButton.,Other
+"Patch Set 1:
+
+I already submitted CL to resolve this issue. Did you find any problem there?",Other
+It is supposed to take from UI reference. Do you really think that we should give UI reference for all the integral constants from UI?,Other
+I added log here. Please check.,Other
+please use SGAppLog method.,Other
+"So many function regarding log.
+
+Ok i will change as SGAppLog.",Other
+use SGAppLog,Other
+"plz, use weatherstore class for this use defaults wrapper.",Other
+This part is added by mahmud.  I will request him to make a separate file for this.,Other
+"This class may handle some Other functionaly Other than only installation. So i think we can keep this name.
+
+We have also plan to introduce a installer class which can handle all types installation from diffent module.",Other
+you may use WearableManagerService class instead of SAP directly.,Other
+use SGAppLog,Other
+what happen if it is find there is update? any response handler is necessary?,Other
+is this constant necessary for any Other feature? if not then define it in Fota specific class,Other
+"please, use self...",Other
+why do this is required here ?,Other
+It should be suota.,Other
+Could add a else block here and print log? It will help to know if response is not coming for any specific class.,Other
+Device disconnection scenario need so,Other
+Device disconnection scenario need so,Other
+"Yes, vai, I will update this in next CL.",Other
+"Patch Set 1: Verified+1
+
+Searched for DID for band.
+if it is found, applied it.
+if it is not found , replaced the existing ""Gear"" text with ""Band"" as in all of the localisation file ""Gear"" has been written in English",Other
+Remove these lines.,Other
+Please. keep previous change.,Other
+"Some extra changes can be remove, those are not relevant with current CL.",Other
+Can we log different values of the calculation?,Other
+Remove this.,Other
+please add s.,Other
+It will be changed in next CL.,Other
+Both side padding 60 or 90 ?,Other
+Please use AppLog,Other
+"Make it string by providing ""value""",Other
+"Make it string by providing ""value""",Other
+Can you check if text alignment set as Natural,Other
+Please put log here.,Other
+Is this condition needed? Please check.,Other
+Please remove that in next CL.,Other
+Please remove City word.,Other
+"ok removing ""City"" from name",Other
+please make it Cold.,Other
+Please remove City word.,Other
+Please remove City word.,Other
+"You can name this as ""convertedIconNumber""",Other
+"Remove city word.
+
+You can name this ""convertedIconNumber""",Other
+Please remove City word.,Other
+Please remove City word.,Other
+Here you should also add 45.,Other
+Forgot to add.,Other
+Please add 46 also.,Other
+This part should be Cold.,Other
+Please remove that part. This is unnecessary.,Other
+Please remove City word.,Other
+Please remove City word.,Other
+It should be Cold.,Other
+Please remove City word.,Other
+Please remove City word.,Other
+It should be Cold.,Other
+Please remove City word.,Other
+Please remove City word.,Other
+It should be Cold.,Other
+Please remove that part. This is unnecessary.,Other
+ok I am moving each IconNumber converter to specific content provider.,Other
+"You should use ""CamelCase"" for ""static let"" data field naming",Other
+"very confusing name.
+just case name is changed, no decision was made though",Other
+This method for increasing readability  only,Other
+"log should be added
+and again
+is it possible to use guard instead of long if block???",Other
+"is it possible to use guard block?
+or if let block???",Other
+Put log here.,Other
+Put log here.,Other
+In the else part have no code. So I think its better to remove this part.,Other
+change this name to iOS convention such as didReceiveDeviceDisconnect or didDisconnectDevice or better names.,Other
+"As per decision with HQ, we should use list icon. Please check.",Other
+"1. Class name should start with SG prefix
+2. Give a Meaningful class name.",Other
+SG prefix should be added before class name. Please change it.,Other
+what is the reason of such comment?,Other
+"On top of this variable, those are all variable either computed or type.",Other
+Please print the function name as well.,Other
+Unnecessary log print. Please check.,Other
+Use applog instead of print,Other
+Unnecessary space. Please check.,Other
+Unnecessary space/line break in this file. Please check.,Other
+This new function has no definition. Please check.,Other
+Better to use variable for derived path instead of hard coded path.,Other
+What is part 2?,Other
+Why you need to declare it as static? And how you requesting for quick settings?,Other
+Remove pulse word. This feature is generic for watch devices.,Other
+Please change function name. Remove pulse word. Put more generic word.,Other
+Please change function name. Remove pulse word. Put more generic word.,Other
+Please write Unit test of this class,Other
+"This a cherry-pick CL. 
+
+I will give anOther CL for unit test.",Other
+why not general IP?,Other
+can you check if this should be USER_NAME_2,Other
+"In this occurrence, most probably it should be USER_NAME, as in the next occurrence, it is being set with USER_NAME_2.",Other
+This is working in SRBD and won't affect HQ?,Other
+Thanks for noticing this. It has been corrected in recent patch.,Other
+Please keep the Group URI macro,Other
+Send the Idmn_message_id,Other
+Set a default string for testing purpose and send it to stack through flat buffers,Other
+"Patch Set 4: Verified+1 Code-Review+2
+
+Good Job!!!!!!",Other
+Get Interface singleton instance. And do false of pre-regi and re-regi flag,Other
+"Patch Set 1:
+
+Need to check before merge",Other
+"Patch Set 1: -Code-Review
+
+Please rebase and submit again",Other
+ADD ATT in checking,Other
+checking notify ID for decide is it publish or unpublished notification,Other
+add presence subscribe before presence publish,Other
+"Patch Set 1: Code-Review-1
+
+(3 comments)
+
+Need test before merge. contact me before merge",Other
+Need Save call id to track sip-message,Other
+second sip notification of apps publish,Other
+"There are two sip-notification, first was xml body then second is success message.",Other
+generate response when request come from PTTApp,Other
+"Patch Set 1: Code-Review+1
+
+please don't submit, need to check",Other
+Toggle variable implemented,Other
+Toggle implemented,Other
+Comment - out un-necessary code,Other
+modify response message,Other
+Please remove.,Other
+Please blank space.,Other
+Please change the name to ResumeStack*,Other
+Please use Resume Stack as Function name.,Other
+"Please do not change stack, this is new merged code from Android. change your flow instead",Other
+"Patch Set 1: Verified-1 Code-Review-1
+
+need to check further",Other
+"Patch Set 1:
+
+This is a cherry-pick commit from reliable_harman",Other
+"Patch Set 1:
+
+Problem is solved",Other
+initKMC perform only for HQ server,Other
+group uri set for HQ & local server separately,Other
+workspace removed from the list,Other
+workspace file add,Other
+Set MNo value in MyKeyShakke flow,Other
+Define macro for local server,Other
+Check & set differnt copy length for Simulator and HQ server,Other
+SBC macro add,Other
+"Patch Set 1:
+
+(11 comments)
+
+please check comments and talk with me",Other
+Please discuss with me about this callbacks,Other
+are this sigleton class??,Other
+lets talk about this,Other
+"same like before
+is it a singleton class?",Other
+isn't it possible/ better to use NSDate object?,Other
+"please check this, maybe i talked about this",Other
+"Patch Set 1: Code-Review-2
+
+We will submit this code later.",Other
+Change it to SHA-256,Other
+it should SHA-256 encryption. Please change.,Other
+Similar as Base64 URL_SAFE guard.,Other
+Similar as Base64 NO_PADDING guard.,Other
+"Patch Set 1:
+
+Please rename with iOS",Other
+"Patch Set 1:
+
+Please Test in before merge",Other
+"Patch Set 3: Code-Review-2
+
+I will check tomorrow and verify.",Other
+"Patch Set 3:
+
+please rebase your change",Other
+Add pdn to network address for differentiate between HQ or local server,Other
+Set pdn value,Other
+Add pdn variable in NetworkAddress Class,Other
+Issue fix for floor in local server,Other
+Set apple flag only in change line,Other
+Set a macro variable,Other
+"Patch Set 1:
+
+Please test then merged",Other
+please remove name,Other
+Set log in Message in Send message,Other
+Give defined value for better understand,Other
+Delete Preproceesor macros,Other
+Add custom flags,Other
+Add custom flags checking,Other
+[Code comment] Please remove SRBD keyword from Log,Other
+Token Change with SRBD-MCPTT with MCPTT,Other
+"Is it possible to use enum class instead of #define, because they are related?",Other
+Define new macro,Other
+How about make a common logger function that adds the tag you want to set automatically?,Other
+"That's a good idea, I will try to implement this in next CL",Other
+change in condition,Other
+"you are stopping XDM subscribe, why?",Other
+"please rename this to ""albumImageHashes""",Other
+"I think, it was better in previous position.",Other
+Better remove data part for consistency,Other
+Do not force unwrap. use guard-let.,Other
+use guard-let,Other
+Check my comment on error description.,Other
+"1. Follow the naming convention for the error case.
+2. Maintain the number series for the error type.",Other
+"1. Done
+2. This error is returned from server",Other
+Use style formatter tool on this file.,Other
+Better use optional casting and use nil coalescing.,Other
+"change to 
+No Like
+No Comment.",Other
+change to memberIdList,Other
+Devices should also use id list.,Other
+Requested change will be done in later patches.,Other
+change to memberIdList.,Other
+"Just a suggestion:
+This method can also be implemented as follows-
+
+return profiles.map { $0.profileId }",Other
+please see the previous comment,Other
+"These are not public methods, check the MARK comment plz.",Other
+map with variable names.,Other
+add Note comment with variable name/,Other
+please see the previous comment,Other
+Rename class to ProfileId,Other
+add a description and change to requireId,Other
+please remove,Other
+remove the empty space.,Other
+remove hyphens from image set,Other
+This file has been removed,Other
+remove hyphens from image set,Other
+This file has been removed,Other
+Use colors from SocialColors class.,Other
+Use colors from SocialColors class.,Other
+rename post to '(toPost post:Post)',Other
+function name is not being like a sentence. Try to make it like iOS convention.,Other
+Rename the file to GroupInfoDescriptionView.xib,Other
+"Please use ""SocialFonts""",Other
+"Please use ""SocialFonts"". If required, update the SocialFonts class",Other
+"Please use ""SocialFonts""",Other
+"Please use ""SocialFonts""",Other
+"""eventName"" and ""eventDescription"" should be optional attribute.",Other
+Change to proper names.,Other
+change file name to proper meaning.,Other
+Change description also.,Other
+Change description also.,Other
+define the fonts in socialFonts.,Other
+Remove space.,Other
+"remove comment, if not needed. If needed add your name.",Other
+correct the spelling,Other
+correct the spelling,Other
+I think myprofile info shouldn't be optional,Other
+"Seems, this method is not necessary. Remove.",Other
+"thanks for your suggestion, done!",Other
+"Patch Set 6:
+
+(1 comment)
+
+Minor refactoring",Other
+refresh_icon@1x,Other
+refresh_icon@2x,Other
+refresh_icon@3x,Other
+Change this file name also.,Other
+remove the empty space,Other
+remove the empty spaces,Other
+please remove the empty spaces,Other
+please remove the empty spaces,Other
+please remove the empty spaces,Other
+It's better to rename the method to '...memberSelectionView',Other
+check if this is intentional or not.,Other
+change this to selection map for contacts/friends...,Other
+what does 'sc' stands for.,Other
+capitalize V,Other
+I think apple uses naming like didSelectePeople/Device.,Other
+please update the name to a more appropriate one.,Other
+add what? Please provide more intuitive name.,Other
+make the self instance weak.,Other
+"SESSDk doesn't know about views, move to app side.",Other
+"please follow consistent convention of prefix ""IDS""",Other
+"please follow consistent convention of prefix ""Image""",Other
+"please follow consistent convention of suffix ""Image""",Other
+"is this required?
+It was not available in previous patch.",Other
+remove if Codable is not necessary,Other
+separate the names.,Other
+please adda . NOTE why 2 is hardcoded so tat the purpose is better understood,Other
+"please rename this to reflect the purpose more. suggestion: ""sectionHeaderTitle""",Other
+no need to assign to new variable.,Other
+This change is still same as previous comment.,Other
+didSelectPeople,Other
+didSelectDevice,Other
+Use SocialColors.,Other
+either rename to defaultBackButtonImage or rename the rest without Image suffix,Other
+Please remove this. It is unnecessary,Other
+See above comment,Other
+rename to memberSelectionview,Other
+rename to memberSelectionView,Other
+rename to showMemberSelectionView,Other
+why is error optional in failure block? Please log error even if error is nil to notify of failure,Other
+rename to backBtnTapGestureRecognizer,Other
+remove.,Other
+fix formatting here,Other
+no need to write additional init function. Assign default values to the Other one,Other
+Is there any benefit in having tagged user array nullable? If not make it mandatory and assign empty list [ ] as its default value,Other
+Remove all these whitespaces,Other
+Double. Remove.,Other
+Remove feedHeaderView prefix. All variables are for this view.,Other
+"Patch Set 2:
+
+(1 comment)
+
+one minor change required.",Other
+please check is it necessary or not,Other
+"check all of this ""self""",Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+Is it guaranteed to always return non-nil?,Other
+I think we can remove this file now.,Other
+Formatting not correct.,Other
+rename - done,Other
+Please look at the previous comment about this method.,Other
+Please look at the previous comment about this method.,Other
+it should be createdTime I think.,Other
+Modify in image util as per discussion to remove duplicate codes.,Other
+Modify in image util as per discussion to remove duplicate codes.,Other
+Modify in image util as per discussion to remove duplicate codes.,Other
+it will be done in the next refactoring of feed,Other
+it will be done in the next refactoring of feed,Other
+Check My previous comment on updating the imageHash in Views. Please check and confirm.,Other
+it will be done in the next refactoring of feed,Other
+Nothing is being done here. Remove if unnecessary.,Other
+add comment for labels.,Other
+This should be timeline.,Other
+"Patch Set 1: Code-Review-1
+
+Please Modify the UX as we discussed.",Other
+replaced,Other
+this should be defined in SocialFonts. Change or add TODO,Other
+"> this should be defined in SocialFonts. Change or add TODO
+
+Fonts or TextStyles or Themes.",Other
+Please define in social fonts or add todo,Other
+Is this todo still required? Is this not already completed?,Other
+Then change TODO to FIXME,Other
+Add Dummy mark here.,Other
+"put brackets ""(isSuccess, result)""",Other
+"remove the spaces before ""weak"" and after ""self""",Other
+it will be better if we keep it in a constant,Other
+This would be removed later and replaced by error code.,Other
+please check if it violates trailing closure.,Other
+please check if it violates trailing closure.,Other
+"add space and if deemed necessary, NOTE",Other
+add NOTE,Other
+"add space and if deemed necessary, NOTE",Other
+add NOTE,Other
+please make msg localizable,Other
+please make msg localizable,Other
+please think of a way to avoid force unwrapping,Other
+introduce constant according to accompanying TODO comment if possible,Other
+Please think of a way to avoid forced unwrapping,Other
+please investigate if elementsEqual can be replaced with implementation of Equitable and usage of ==,Other
+see above,Other
+see above,Other
+see above,Other
+see above,Other
+see above,Other
+please see why local variable needs force unwrap,Other
+please see if introducing and enum of status code is possible,Other
+see above,Other
+unnecessary whitespace?,Other
+print the error in the log.,Other
+print the error in the log.,Other
+wrong description,Other
+rename to groupMemberPath and avoid duplicates.,Other
+try to make it short - minor,Other
+please make self weak here,Other
+please make self weak here,Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+if this is unnecessary then please remove,Other
+please remove trailing_closure_violation,Other
+"in success block you are getting list of group members, please update.",Other
+put a brace around error.,Other
+Better show 'Failed to load',Other
+why hard coded values are being checked?,Other
+Avoid hard coded values.,Other
+We are supposed to use images from SocialImages class.,Other
+Image to data? or Data to image?,Other
+what if insertMember is called multiple times. Where is code for previously added members?,Other
+"change names to 'invited, rejected, accepted'",Other
+I have kept pending case as is since it is more appropriate,Other
+is there an expireTime for member?,Other
+"profile name class has a profile type and account type. 
+Shouldn't profile class contain these variable?",Other
+"AccountType contains familyName, gienName??",Other
+This was given by server so I kept it as is,Other
+ProfileTypeContains NAMES!!,Other
+"Keep init methods at the top, after variables",Other
+"Instead of database, use 'forceDataFromServer' check 'requestFeedbackCounts' method in contact profile manager.
+We may change databases, list may come from files, or Other storages. So, app doesn't need to specify that.",Other
+Use localised text,Other
+"Shouldn't we do something in the UI?
+Add a TODO for now.",Other
+Execute the worker here. And change the method name to FetchAndShowMember(),Other
+Please declare a constant.,Other
+indexOffset seems better for the variable name.,Other
+"thanks, done.",Other
+Incorporate image data in Device entity.,Other
+"please rename this to ""albumImageHashes""",Other
+Is it necessary to add anOther parameter? memberList is being sent already.,Other
+"I think, it was better in previous position.",Other
+Better remove data part for consistency,Other
+Do not force unwrap. use guard-let.,Other
+use guard-let,Other
+Check my comment on error description.,Other
+"1. Done
+2. This error is returned from server",Other
+Use style formatter tool on this file.,Other
+Please use error description,Other
+Better use optional casting and use nil coalescing.,Other
+"change to 
+No Like
+No Comment.",Other
+change to memberIdList,Other
+Devices should also use id list.,Other
+Requested change will be done in later patches.,Other
+change to memberIdList.,Other
+"Just a suggestion:
+This method can also be implemented as follows-
+
+return profiles.map { $0.profileId }",Other
+please see the previous comment,Other
+change coding key to map variable name.,Other
+please see if imageHash should be assigned nil,Other
+map with variable names.,Other
+add Note comment with variable name/,Other
+please see the previous comment,Other
+Rename class to ProfileId,Other
+"IdType Shouldn't be nil.
+define Unknown in enum and force user to pass id type",Other
+please remove,Other
+remove the empty space.,Other
+remove hyphens from image set,Other
+This file has been removed,Other
+remove hyphens from image set,Other
+This file has been removed,Other
+Use colors from SocialColors class.,Other
+Use colors from SocialColors class.,Other
+already implemented,Other
+"After creating new CardCell base class, this won't be necessary anymore.",Other
+rename post to '(toPost post:Post)',Other
+function name is not being like a sentence. Try to make it like iOS convention.,Other
+Rename the file to GroupInfoDescriptionView.xib,Other
+"Please use ""SocialFonts""",Other
+"Please use ""SocialFonts"". If required, update the SocialFonts class",Other
+"Please use ""SocialFonts""",Other
+"Please use ""SocialFonts""",Other
+added a TODO in codebase.,Other
+"""eventName"" and ""eventDescription"" should be optional attribute.",Other
+Change to proper names.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+Change description also.,Other
+Change description also.,Other
+This overridden function isn't doing anything. Remove.,Other
+define the fonts in socialFonts.,Other
+remove blank space.,Other
+Remove space.,Other
+"remove comment, if not needed. If needed add your name.",Other
+correct the spelling,Other
+correct the spelling,Other
+please follow the proper way for printing error msg,Other
+I think myprofile info shouldn't be optional,Other
+Follow above comment and add an extension,Other
+"Since you've managed to move it here (good job), please go on and set likerLabel with User names bolded using attributed text.",Other
+This will be submitted in anOther commit. I will add a TODO,Other
+"Seems, this method is not necessary. Remove.",Other
+"thanks for your suggestion, done!",Other
+"Patch Set 6:
+
+(1 comment)
+
+Minor refactoring",Other
+refresh_icon@1x,Other
+refresh_icon@2x,Other
+refresh_icon@3x,Other
+Change this file name also.,Other
+remove the empty space,Other
+remove the empty spaces,Other
+please remove the empty spaces,Other
+please remove the empty spaces,Other
+please remove the empty spaces,Other
+It's better to rename the method to '...memberSelectionView',Other
+"Should this string be hard coded?
+
+use localised strings.",Other
+Better to rename this method to memberPicker. and Change the delegate to MemberPickerDelegate.,Other
+check if this is intentional or not.,Other
+change this to selection map for contacts/friends...,Other
+what does 'sc' stands for.,Other
+"We are using SocialColors class. Use from there. if it is for removing the separator only for this view, then no need.",Other
+capitalize V,Other
+I think apple uses naming like didSelectePeople/Device.,Other
+please update the name to a more appropriate one.,Other
+add what? Please provide more intuitive name.,Other
+make the self instance weak.,Other
+print the error in log.,Other
+"SESSDk doesn't know about views, move to app side.",Other
+"please follow consistent convention of prefix ""IDS""",Other
+"please follow consistent convention of prefix ""Image""",Other
+"please follow consistent convention of suffix ""Image""",Other
+"is this required?
+It was not available in previous patch.",Other
+remove if Codable is not necessary,Other
+separate the names.,Other
+please adda . NOTE why 2 is hardcoded so tat the purpose is better understood,Other
+"please rename this to reflect the purpose more. suggestion: ""sectionHeaderTitle""",Other
+no need to assign to new variable.,Other
+please try to avoid force unwrapping,Other
+This change is still same as previous comment.,Other
+didSelectPeople,Other
+didSelectDevice,Other
+Use SocialColors.,Other
+add IDS prefix to this and all the following that lacks it,Other
+Please remove this. It is unnecessary,Other
+See above comment,Other
+rename to memberSelectionview,Other
+rename to memberSelectionView,Other
+rename to showMemberSelectionView,Other
+rename to backBtnTapGestureRecognizer,Other
+remove.,Other
+fix formatting here,Other
+Is there any benefit in having tagged user array nullable? If not make it mandatory and assign empty list [ ] as its default value,Other
+It should not be mandatory as post can be created without any tagged users,Other
+Remove all these whitespaces,Other
+Double. Remove.,Other
+remove trailing spaces.,Other
+"Patch Set 2:
+
+(1 comment)
+
+one minor change required.",Other
+"Patch Set 4: Verified+1
+
+(1 comment)
+
+Fixed Merge conflict and removed remaining deinit functions",Other
+Deinit fuction is to be removed and given in anOther commit,Other
+please check is it necessary or not,Other
+"check all of this ""self""",Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+Is it guaranteed to always return non-nil?,Other
+I think we can remove this file now.,Other
+Before removing we have to check it further,Other
+Formatting not correct.,Other
+rename - done,Other
+Same comment applies here. Closure should be set as completionTask,Other
+Please look at the previous comment about this method.,Other
+Please look at the previous comment about this method.,Other
+it should be createdTime I think.,Other
+Modify in image util as per discussion to remove duplicate codes.,Other
+Modify in image util as per discussion to remove duplicate codes.,Other
+Modify in image util as per discussion to remove duplicate codes.,Other
+"1. CoreData already support update for Comment entity.
+2. I believe we need to update the imageHash only if the imageHash is nil.",Other
+it will be done in the next refactoring of feed,Other
+"Is this ""Like"" object passed by reference?
+if not, updating the imageHash here will have no effect. Please check.",Other
+it will be done in the next refactoring of feed,Other
+Check My previous comment on updating the imageHash in Views. Please check and confirm.,Other
+it will be done in the next refactoring of feed,Other
+Nothing is being done here. Remove if unnecessary.,Other
+Add logs in Validation blocks.,Other
+add comment for labels.,Other
+This should be timeline.,Other
+"Patch Set 1: Code-Review-1
+
+Please Modify the UX as we discussed.",Other
+replaced,Other
+Write down the parameter names beside the function header in comments,Other
+this should be defined in SocialFonts. Change or add TODO,Other
+"> this should be defined in SocialFonts. Change or add TODO
+
+Fonts or TextStyles or Themes.",Other
+Please define in social fonts or add todo,Other
+Is this todo still required? Is this not already completed?,Other
+This TODO is Required. pronab.m is working on this.,Other
+Then change TODO to FIXME,Other
+Add Dummy mark here.,Other
+"put brackets ""(isSuccess, result)""",Other
+"remove the spaces before ""weak"" and after ""self""",Other
+This would be removed later and replaced by error code.,Other
+"please provide log with ""errorDescription"" if required, Otherwise replace with ""_"" if it is not used",Other
+"please provide log with ""errorDescription"" if required, Otherwise replace with ""_"" if it is not used",Other
+"add space and if deemed necessary, NOTE",Other
+add NOTE,Other
+"add space and if deemed necessary, NOTE",Other
+add NOTE,Other
+please add instructive comment about what to do with this commented out code,Other
+please make msg localizable,Other
+please make msg localizable,Other
+please think of a way to avoid force unwrapping,Other
+see above,Other
+see above,Other
+see above,Other
+see above,Other
+see above,Other
+please see why local variable needs force unwrap,Other
+please see if introducing and enum of status code is possible,Other
+see above,Other
+unnecessary whitespace?,Other
+print the error in the log.,Other
+print the error in the log.,Other
+wrong description,Other
+rename to groupMemberPath and avoid duplicates.,Other
+try to make it short - minor,Other
+please make self weak here,Other
+please make self weak here,Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+if this is unnecessary then please remove,Other
+please remove trailing_closure_violation,Other
+"in success block you are getting list of group members, please update.",Other
+put a brace around error.,Other
+Better show 'Failed to load',Other
+why hard coded values are being checked?,Other
+Avoid hard coded values.,Other
+Image to data? or Data to image?,Other
+Don't use image literals directly. Use from social images class.,Other
+what if insertMember is called multiple times. Where is code for previously added members?,Other
+"change names to 'invited, rejected, accepted'",Other
+I have kept pending case as is since it is more appropriate,Other
+is there an expireTime for member?,Other
+"profile name class has a profile type and account type. 
+Shouldn't profile class contain these variable?",Other
+"AccountType contains familyName, gienName??",Other
+This was given by server so I kept it as is,Other
+ProfileTypeContains NAMES!!,Other
+"Is it mandatory field? If so, add Validation.",Other
+Group Id is already non optional. So nil cannot be assigned.,Other
+"Keep init methods at the top, after variables",Other
+Use localised text,Other
+"Shouldn't we do something in the UI?
+Add a TODO for now.",Other
+make it userInteractive since the User is waiting for the UI update.,Other
+Please declare a constant.,Other
+indexOffset seems better for the variable name.,Other
+"thanks, done.",Other
+Incorporate image data in Device entity.,Other
+create device image folder in Assets and fetch image files.,Other
+"please rename this to ""albumImageHashes""",Other
+"I think, it was better in previous position.",Other
+Mandatory attributes are set on front according to the priority.,Other
+Better remove data part for consistency,Other
+Do not force unwrap. use guard-let.,Other
+You do not need to convert the error to string. Use SESLibError description.,Other
+use guard-let,Other
+Check my comment on error description.,Other
+"1. Follow the naming convention for the error case.
+2. Maintain the number series for the error type.",Other
+"1. Done
+2. This error is returned from server",Other
+Use style formatter tool on this file.,Other
+Please use error description,Other
+Better use optional casting and use nil coalescing.,Other
+"change to 
+No Like
+No Comment.",Other
+change to memberIdList,Other
+Devices should also use id list.,Other
+Requested change will be done in later patches.,Other
+change to memberIdList.,Other
+"Just a suggestion:
+This method can also be implemented as follows-
+
+return profiles.map { $0.profileId }",Other
+please see the previous comment,Other
+"These are not public methods, check the MARK comment plz.",Other
+change coding key to map variable name.,Other
+please see if imageHash should be assigned nil,Other
+map with variable names.,Other
+add Note comment with variable name/,Other
+please see the previous comment,Other
+Rename class to ProfileId,Other
+add a description and change to requireId,Other
+please remove,Other
+remove the empty space.,Other
+remove hyphens from image set,Other
+This file has been removed,Other
+remove hyphens from image set,Other
+This file has been removed,Other
+Use colors from SocialColors class.,Other
+Use colors from SocialColors class.,Other
+already implemented,Other
+rename post to '(toPost post:Post)',Other
+function name is not being like a sentence. Try to make it like iOS convention.,Other
+Rename the file to GroupInfoDescriptionView.xib,Other
+"Please use ""SocialFonts""",Other
+"Please use ""SocialFonts"". If required, update the SocialFonts class",Other
+"Please use ""SocialFonts""",Other
+"Please use ""SocialFonts""",Other
+added a TODO in codebase.,Other
+"""eventName"" and ""eventDescription"" should be optional attribute.",Other
+Change to proper names.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+change file name to proper meaning.,Other
+Change description also.,Other
+Change description also.,Other
+define the fonts in socialFonts.,Other
+remove blank space.,Other
+Remove space.,Other
+"remove comment, if not needed. If needed add your name.",Other
+correct the spelling,Other
+correct the spelling,Other
+please follow the proper way for printing error msg,Other
+I think myprofile info shouldn't be optional,Other
+remove trailing_closure_violation,Other
+Follow above comment and add an extension,Other
+"Since you've managed to move it here (good job), please go on and set likerLabel with User names bolded using attributed text.",Other
+This will be submitted in anOther commit. I will add a TODO,Other
+"Seems, this method is not necessary. Remove.",Other
+Put cause and measure while fixing issues.,Other
+"What if group list is nil or empty?
+This will cause indexOutOfBounds exception.",Other
+"thanks for your suggestion, done!",Other
+"Patch Set 6:
+
+(1 comment)
+
+Minor refactoring",Other
+refresh_icon@1x,Other
+refresh_icon@2x,Other
+refresh_icon@3x,Other
+Change this file name also.,Other
+remove the empty space,Other
+remove the empty spaces,Other
+please remove the empty spaces,Other
+please remove the empty spaces,Other
+please remove the empty spaces,Other
+It's better to rename the method to '...memberSelectionView',Other
+"Should this string be hard coded?
+
+use localised strings.",Other
+check if this is intentional or not.,Other
+change this to selection map for contacts/friends...,Other
+what does 'sc' stands for.,Other
+"We are using SocialColors class. Use from there. if it is for removing the separator only for this view, then no need.",Other
+capitalize V,Other
+I think apple uses naming like didSelectePeople/Device.,Other
+please update the name to a more appropriate one.,Other
+add what? Please provide more intuitive name.,Other
+make the self instance weak.,Other
+print the error in log.,Other
+"SESSDk doesn't know about views, move to app side.",Other
+"please follow consistent convention of prefix ""IDS""",Other
+"please follow consistent convention of prefix ""Image""",Other
+"please follow consistent convention of suffix ""Image""",Other
+"is this required?
+It was not available in previous patch.",Other
+remove if Codable is not necessary,Other
+separate the names.,Other
+please adda . NOTE why 2 is hardcoded so tat the purpose is better understood,Other
+"please rename this to reflect the purpose more. suggestion: ""sectionHeaderTitle""",Other
+no need to assign to new variable.,Other
+This change is still same as previous comment.,Other
+didSelectPeople,Other
+didSelectDevice,Other
+"""didTapBackButton""/""onBackButtonTap"" seems more appropriate.",Other
+Use SocialColors.,Other
+"keep gesture recogniser as member variable.
+It will create multiple instances and won't be possible to remove it.",Other
+either rename to defaultBackButtonImage or rename the rest without Image suffix,Other
+add IDS prefix to this and all the following that lacks it,Other
+Please remove this. It is unnecessary,Other
+See above comment,Other
+rename to memberSelectionview,Other
+rename to memberSelectionView,Other
+rename to showMemberSelectionView,Other
+why is error optional in failure block? Please log error even if error is nil to notify of failure,Other
+rename to backBtnTapGestureRecognizer,Other
+remove.,Other
+fix formatting here,Other
+Remove all these whitespaces,Other
+Double. Remove.,Other
+Remove feedHeaderView prefix. All variables are for this view.,Other
+Add explanation comment here.,Other
+remove trailing spaces.,Other
+"Patch Set 2:
+
+(1 comment)
+
+one minor change required.",Other
+"Patch Set 4: Verified+1
+
+(1 comment)
+
+Fixed Merge conflict and removed remaining deinit functions",Other
+Better use class name instead of hard coding.,Other
+Deinit fuction is to be removed and given in anOther commit,Other
+please check is it necessary or not,Other
+"check all of this ""self""",Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+check previous comment,Other
+Is it guaranteed to always return non-nil?,Other
+I think we can remove this file now.,Other
+Before removing we have to check it further,Other
+Try to pass image view and move the function to Util class. Reduce duplicated codes.,Other
+Similar function has been used in many Other places. That's why it will be done in next CL.,Other
+Formatting not correct.,Other
+rename - done,Other
+it should be createdTime I think.,Other
+it will be done in the next refactoring of feed,Other
+"Is this ""Like"" object passed by reference?
+if not, updating the imageHash here will have no effect. Please check.",Other
+it will be done in the next refactoring of feed,Other
+Check My previous comment on updating the imageHash in Views. Please check and confirm.,Other
+it will be done in the next refactoring of feed,Other
+Nothing is being done here. Remove if unnecessary.,Other
+Add logs in Validation blocks.,Other
+This code is required. needed to reveres the change.,Other
+"Abandoned
+
+will be merged with feature CL of web service sdk",Other
+"Dead code, will be never used. Kindly remove them.",Other
+"Patch Set 1: Code-Review+1
+
+cherry pick to dev",Other
+should not we check for nil. as i know these both are same but nil is more commonly used for objc.,Other
+pls refer to the comment in Other branch code,Other
+Please #define the value,Other
+"Patch Set 1:
+
+Is this to fix the cookie problem which caused sign in page again?",Other
+"Please add after checking, when sleep data is modified.",Other
+[Suggestion] Please check if there is a potential scope for crash for any value of indexPath.row.,Other
+Already checked,Other
+Use constant,Other
+"Patch Set 1: Code-Review+1
+
+Seems ok to me, Thank you",Other
+"Patch Set 4: Code-Review+1
+
+Thank you",Other
+use systolic and diastolic instead of first and second.,Other
+use systolic and diastolic instead of first and second.,Other
+I tried to use generic name rather than tracker specific name.,Other
+I have override the required method and did the bp related work in inherited class.,Other
+"Patch Set 1: Code-Review-1
+
+This is for moden device test purpose only. it will not be merged now",Other
+"Patch Set 2:
+
+Please confirm Moden connectivity with this SDK. Also, check with the existing gear models.",Other
+"Patch Set 2:
+
+@Mamun: could you check connectivity with already supported devices?",Other
+"Patch Set 2:
+
+I have checked connectivity with already supported devices. No issue arisen.",Other
+"Patch Set 5: Code-Review-1
+
+Do not merge",Other
+use systolic and diastolic instead of first and second.,Other
+use systolic and diastolic instead of first and second.,Other
+I tried to use generic name rather than tracker specific name.,Other
+I will try to extend this.,Other
+"Patch Set 1: Code-Review+1
+
+SW version information is correct",Other
+"Patch Set 2: Code-Review+1
+
+SW version information is correct",Other
+"Patch Set 1: Code-Review-1
+
+This is for moden device test purpose only. it will not be merged now",Other
+"Patch Set 2:
+
+Please confirm Moden connectivity with this SDK. Also, check with the existing gear models.",Other
+"Patch Set 2:
+
+@Mamun: could you check connectivity with already supported devices?",Other
+"Patch Set 2:
+
+I have checked connectivity with already supported devices. No issue arisen.",Other
+"Patch Set 5: Code-Review-1
+
+Do not merge",Other
+this unit might change according to the device unit pref.  use SHTBloodPressureUnitHelper.getBloodPressureUnit(). which will return the appropriate  unit.,Other
+why you check this,Other
+do  nil check,Other
+try to give space after semicolon,Other
+"Patch Set 1: Code-Review+1
+
+SW version information is correct",Other
+remove this red marker,Other
+"is there specific reason for this value to be greater that 70?  is yes device ""70"" as a meaningful name.",Other
+"Patch Set 1: Code-Review+1
+
+code seems okay",Other
+"Patch Set 1: Code-Review+1
+
+SW version information is correct.",Other
+please add comment here,Other
+Please add comment here,Other
+is this needed if viewDidLoad already has getDailyLog()?,Other
+SHMFitnessRepository or SHMScoreRepository?,Other
+It should be SHMScoreRepository. Fixing It.,Other
+"Patch Set 3: Code-Review+1
+
+Please submit this CL",Other
+"Patch Set 2: Code-Review-1
+
+(2 comments)",Other
+leave group in case of error also,Other
+"why are you using OperationQueue here?
+To update profile in server you can just make an async call right?
+If you really have to make a sync call then use separate queue, not global queue, like this:
+
+DispatchQueue.global().async {
+    // do stuff in background, concurrent thread
+
+    DispatchQueue.main.sync {
+        // update UI
+    }
+}",Other
+you can use global queue instead of main queue since it can be a background task. Right?,Other
+"Patch Set 1: Verified-1 Code-Review-2
+
+Rejected: Need to update version",Other
+"Install swiftLint, build project and remove the swiftLint warnings.",Other
+why are we hard coding these values? Is it just for test?,Other
+Yes. These values are just for test.,Other
+remove this function if not needed,Other
+should start with lowercase,Other
+"I wanted you to comment in the code, not just in Gerrit code review.",Other
+"May be it will work by reloading a single cell, no need to reload full table view",Other
+why sleep ? :),Other
+why is this line commented?,Other
+Why are you using return instead of break?,Other
+[S] Camel case.,Other
+[S] Better to use SHLogUtil.logError in such a case.,Other
+"should not there be a viewModel as parameter? 
+please put  a space after your colon mark. it is the  convention.",Other
+please put a space after colon.,Other
+reconsider the protocol name,Other
+is it necessary to put these method in viewWillAppear?,Other
+try to remove these red mark from source file please.,Other
+put space after colon.,Other
+"Patch Set 1: Code-Review+1
+
+Seems okay",Other
+"Patch Set 1: Code-Review+1
+
+Seems okay",Other
+why this line is added multiple times ?,Other
+why this line is added multiple times ?,Other
+why this line is added multiple times ?,Other
+why this line is added multiple times ?,Other
+why this line is added multiple times ?,Other
+why this line is added multiple times ?,Other
+why this line is added multiple times ?,Other
+why this line is added multiple times ?,Other
+why this line is added multiple times ?,Other
+"Patch Set 2:
+
+Need to understand this change tomorrow.",Other
+"Patch Set 1: Code-Review+1
+
+Code seems okay.",Other
+please define the value.,Other
+Change it in next patch,Other
+remove this method please,Other
+remove semicolon from this file for consistent coding style in swift,Other
+if localDeviceUuid found nil then it will be set here as nil. will that make any inconsistency ?,Other
+use the constant file name.,Other
+spelling mistake.,Other
+please comment these line.,Other
+what is key string used for?,Other
+why not bind (instead of subscribe?) ? :),Other
+where is the use of dispose bag?,Other
+make init private so that no one can instantiate objects of this class.,Other
+"rename to ""singleton"" to ""sharedInstance"" for consistent name.",Other
+check lower view nil or not,Other
+"Please rename ""Something"" with a meaningful name.",Other
+"These are dummy method, will be removed.",Other
+please use meaningful method name.,Other
+"These are dummy method, will be removed.",Other
+Check for localization string.,Other
+You can use here RECOMMENDED_GOAL instead of value,Other
+Please remove ;,Other
+remove these class variables since they are not used.,Other
+make all funcs static if it doesn't need any class level variables.,Other
+Please use tag to separate days instead of separate methods for each day,Other
+why this value is 90? if there is any specific reason.,Other
+"i recommend to use text as the suffix of this variable. 
+ex: mediNotTakenLblText or mediNotTakenText",Other
+try to use logic like above comment,Other
+there is a constant defined for this in BloodPressureMedication class. please use those constant.,Other
+use text in the string definition. it seems like you are defining a uiLabel,Other
+"if there is a initializer value then why its a optional type ?
+
+This comment also applies to Other variable that assign a initializer value and also has a optional type.",Other
+"i think these code for test purposes, right ?
+please keep a mark at begging of these code so you can track it easily later time.",Other
+Please add nil check here,Other
+Please use switch case here,Other
+"Is it ""More move"" or ""Move more"" ? :)",Other
+"""More move""",Other
+why is this commented out?,Other
+is it working now?,Other
+"no. Still getting ""post failed"" response",Other
+"why is the variable named ""project""? :)",Other
+write unit test for sleep repository,Other
+use MACRO for hard coded values.,Other
+"Currently we don't have real value of elevated hr, it is just dummy data.",Other
+10 should be multiplied by common height factor.,Other
+multiplied in next patch,Other
+Use MACRO for hardcoded value.,Other
+Use MACRO for hardcoded value.,Other
+did not use this method in real code. it is dummy draw.,Other
+"Please correct the name, add prefix",Other
+May be not needed.,Other
+No use of this api now,Other
+"Patch Set 1:
+
+(1 comment)
+
+Please correct the name of the folder as 
+hms/Me/Profile/SHMProfileViewController.swift/.xib",Other
+"Patch Set 1:
+
+Please correct the name of the folder as 
+hms/Me/ProfileView/SHMProfileViewController.swift/.xib",Other
+"Patch Set 2: Code-Review-1
+
+Duplicate files added under different folders.",Other
+Please correct the name,Other
+"please change the print statement with lumberjack logging.
+
+Question: does + sign works in print statement ?",Other
+Remove Unused code,Other
+correct the spelling,Other
+Please follow above format did first followed by name,Other
+Please refactor name to DashboardLinearLayoutManager,Other
+WIDE_TRACKER is not deprecated.,Other
+Change name accordingly,Other
+"- it would be better to provide a separate setter method for animation enable/disable. In this way, developers won't have to change code.
+- Otherwise if anyone wants to change the animation option later, they will have to initialise again, which is a cos",Other
+"I think it should be added  in SGHomeSettingsTabViewController.m too ,
+under didSelect method
+case MENU_SHEALTH:",Other
+"this pointer is allocated but never released, pls check",Other
+There is a function called updateInitilizeAngle to perform this operations.,Other
+Presenter class naming is inconsistent with Other classes. Kindly check,Other
+This screen is named MainScreen at some place and MainView at Other places. Would be better to use similar names. SocialHome can be used :),Other
+Class name seems inconsistent with the Other classes of this module.,Other
+Kindly put the proper copyright text,Other
+Please fix the indentation,Other
+Please fix the indentation.,Other
+Please move to common Resource file as this string can be using by all the modules.,Other
+"remove import foundation, it may not necessary to import",Other
+rename it as SGEsimHMACSignatureGenerator or better name,Other
+Remove warnings: no need to add nil check. resource.performer is not optional,Other
+"Use macro for ""start_time"" and rest of below",Other
+Add a comment as explanation of assignment for keychain key,Other
+add 'SSO',Other
+rename method.,Other
+add SSO,Other
+remove import,Other
+may use fileprivate instead of private. then these members can be used in extension class,Other
+remove import,Other
+DN... use full name,Other
+use full name ... DN,Other
+"do not need ""Activation"" word again again, since it the prefix name of the enum",Other
+there should be on covenience init,Other
+do not need this setter func... instead use var delegate {set get},Other
+Unused variables removed,Other
+Unused variables removed,Other
+Better to follow camel case,Other
+Use proper copyright text,Other
+Remove empty indentations,Other
+Kindly insert proper indentation,Other
+Kindly fix indentations,Other
+plz check below comment.,Other
+"we do not allow e.printStackTrace.
+so please check it single LOG.e
+
+and why did you insert sleep ?
+and if needed, how to measure 100ms ?",Other
+"You can add view in MeFragment for firstRestore view.
+Please check again",Other
+remove unused code.,Other
+You can keep this class in VC file as separate class i,Other
+"Better not use this name for public version.
+For reducing confusion use proper name for private methods.",Other
+"Redundant code, as optional value will be nil by default.",Other
+this callback won't be necessary.,Other
+May be method name spelling mistake,Other
+Remove empty indentations!,Other
+Establish connection between manager to interactor.,Other
+Use proper header/copyright information!,Other
+Remove empty indentations..!!,Other
+Append ViewController as Other ids are following that.,Other
+Establish connection between manager to interactor.,Other
+Follow same convention for brackets.,Other
+Follow same convention for brackets.,Other
+"Don't localise strings that are not for UI yet.
+Change before showing in the UI components.",Other
+Use proper headers!,Other
+Save getTabAt value to some temp field. This will avoid multiple getTabAt call.,Other
+Content-Type should be in ResponseKey struct ...,Other
+server instead of service,Other
+is it necessary to keep two methods here or possible to serve with one method in protocol,Other
+"Please convert eSimActivation and eSim2Activation as Bool, It will be easy and useful.",Other
+remove this to SGEsimSettingsProvider or create new class if necessary,Other
+get all the esim info from esimSettingsprovider class,Other
+use an else condition for error check,Other
+Checking method is Send Image from GM,Other
+Class name should be OnDeviceActivationSynchronous,Other
+Class name should be OnDeviceActivationSyncServerCommuncator,Other
+please change the variable name in loop for readability,Other
+Please change to better name,Other
+"why this code is needed? mMain/mSub value, unit is set from super.setContents(). 
+Is it different text style?",Other
+"why this code is needed? mMain/mSub value, unit is set from super.setContents(). 
+Is it different text style?",Other
+"the word is ""Biometric"" not ""Biomatric""",Other
+"""Biometric""
+Also these need to be localized. Add a TODO",Other
+Retry needs to be localized.,Other
+Please replace with PatientInfoTableCellTypes values,Other
+Please rename Something,Other
+need to refactor with send request common method in sgesimserver class,Other
+"I think just to use the mWeakFragment, that's more better.
+It doesn't need to make new weakReference",Other
+"Not a good place to instantiate, please do it in onCreateBannerView",Other
+"Banner doesn't need mGuideArrowDrawable, remove it",Other
+un-used constructor,Other
+these are for caculating the guide arrow. so remove it,Other
+6.0 cocept was been removed the GuideArrow,Other
+"Move this to Manager class.
+Also make setter private.",Other
+"better to make this Alert dialog generic in common utils.
+Also change deny call back to buttonActionCallback/Listener.
+
+Use full forms of words.",Other
+"change variable name to deviceContacts/Profiles
+
+if possible use 'lazy' instead of initialising.",Other
+change 'onDeviceContactList' to contacts/profiles.,Other
+please change test msg,Other
+please remove 'on' prefixes from both variables.,Other
+please remove '_' from method name.,Other
+please clear previous list before refetching as this will make duplicate data.,Other
+Make it class constant as this is not changing yet.,Other
+Please mention the problem clearly for which the patch is being applied.,Other
+add method desc here.,Other
+"If not required for LogNoButton, please move to LogButton",Other
+Kindly put space before the left brace,Other
+Kindly use Constant class,Other
+Kindly follow the regular swift convention of if statement,Other
+Kindly add condition for all Other types of feed and mark them with TODO comment,Other
+Kindly add TODO comment for the ALBUM type feed,Other
+Kindly put a space before left brace,Other
+Kindly follow the formatting convention,Other
+Kindly put an space before left brace,Other
+Kindly use camel case format for all the variable name,Other
+Kindly remove empty indentations,Other
+"method name should be verb.
+like only 'initialise' or initView.",Other
+method name should be verb.,Other
+Would be better not to use hard coded value here.,Other
+Please fix the space issue in the next patch,Other
+Please fix the space issue in the next patch,Other
+Please check if this change is according to UI concept.,Other
+Add proper copyright for this file,Other
+Kindly check if likerProfileImage and commenterProfileImage is required,Other
+"likerNameView is actually a UILabel.
+
+better to rename it as likerNameLabel",Other
+Better to start the func name with small letter,Other
+Kindly use constant file for hardcoded values,Other
+Kindly add proper copyright text,Other
+"feedHeaderViewTimeView is actually a UILabel.
+Better to name it accordingly",Other
+Kindly remove empty indentations,Other
+Kindly add condition for all Other types of feed and mark them with TODO comment,Other
+Kindly add TODO comment for the ALBUM type feed,Other
+Kindly check it we can use the constant class for the rowHeight value,Other
+Kindly fix the indentation,Other
+Kindly remove empty indentations,Other
+Kindly follow the formatting convention,Other
+Kindly insert one line gap in between two consecutive function,Other
+Kindly follow the formatting convention,Other
+Kindly check if we can avoid the force unwraping,Other
+Kindly check if this change is intentional,Other
+As per discussion kindly import Foundation only in the Entities,Other
+Please use proper copyright text,Other
+"Should we keep different attributes for each commenter or should we keep the Profile entity?
+
+Kindly check",Other
+Kindly put a space before left brace,Other
+Kindly use the proper copyright text,Other
+Kindly put an space before left brace,Other
+Kindly use camel case format for all the variable name,Other
+Kindly put an space before left brace,Other
+Kindly put an space before left brace,Other
+Kindly maintain a blank line in between two consecutive function,Other
+Kindly add TODO comment,Other
+Kindly maintain a blank line in between two consecutive function,Other
+Kindly remove empty indentations,Other
+"these 3 constants are related to Health Record feature. 
+Could you please move these constants to SHTHealthRecordConstants.swift ?",Other
+SGGearAppsDownloadStatus name could be SGGearAppsDownloadInfo,Other
+"I think download status should not be added from outside, it will be share to outside",Other
+gearAppDownloadStatus nil check should be done first,Other
+lock should be used here,Other
+lock should be used here,Other
+we need to remove forcing IsUserLogin to true for debug build,Other
+Why do we need single tone object? Its better to avoid single tone,Other
+"instead of creating every time, we can create mailcomposer only once.",Other
+unused functions,Other
+unused function,Other
+unused function.,Other
+NO need to pass the DELETE_TAG,Other
+Non optional callbacks can not have nil returned,Other
+change variable name if it is not navigation controller.,Other
+Don't use fatalError().,Other
+remove fatalError(). Use print for now.,Other
+insert an space before the left brace,Other
+use print function. Don't use fatalError.,Other
+Use the same approach as image,Other
+use print function. Don't use fatalError.,Other
+use print function. Don't use fatalError.,Other
+"Kindly fix the log.
+""Unable to initialize the selected profile""",Other
+remove empty indentation,Other
+use commonUtils.getFullName(),Other
+Please don't use single tone unless if you have any reason.,Other
+sendManageSubsCriptionReq should be sendManageSubscriptionRequest,Other
+write Request instead of ...Req,Other
+here the response data will parsed to build a response Object/,Other
+SGEsimViewController is the base class here... change it.,Other
+test whether user has internet connectivity,Other
+yes pls set it to reasonable time like 5 seconds.,Other
+"distanceFuture = indefinite time period.
+should we set any specific time duration ?",Other
+all these needs to be moved to feature manager in later CLs,Other
+"You have to use mSecButtonResourceId for mSecImageButton.
+mButtonResourceId is used in super class.",Other
+"You have to use mSecButtonColor, mSecButtonColorDrawable for mSecImageButton",Other
+"Maintain consistency with the class name. Either name it as ""ProfileInfoxxx"" or ""Profilexxx""",Other
+Remove empty indentations,Other
+Remove empty indentations,Other
+Maintain consistency with the class names,Other
+Remove empty indentations,Other
+Remove empty indentations,Other
+update the //TODO: comment,Other
+Better to use the SocialConstants class,Other
+Better to use the SocialConstants class,Other
+Better to use the SocialConstants class,Other
+use getFullName() from CommonUtils class to get the full name,Other
+add //TODO: comment to add the dummy data in the SEMS data manager class later.,Other
+Add TODO comment,Other
+Move this to CommonUtils or to a common file,Other
+"add(deprecated id, compat id)",Other
+"add(String deprecatedId, String compatId)",Other
+deprecatedId,Other
+deprecatedId,Other
+Please remove the commented code.,Other
+for arabic language please use RTL condition,Other
+Need to define a flag for RTL language,Other
+"its better to use camel case. ""fullName""",Other
+Better to import Foundation.,Other
+[nit] trailing whitespace,Other
+"please check if there is usage for bixby or deeplink.
+if so, we need to check how to support backward",Other
+"Each Tile view has setOnClickListener.
+If you want to set click listner here, you have to remove code to set click listener in each tileView.",Other
+use weakref for fragment,Other
+"[query]You are already assigning this value in constructor.So, why this redundancy?
+If you want both then define a no argument constructor
+Same comments applied for all set method.",Other
+"Suggestion : Define all values in one constructor which will contain all parameters and then call it form constructors having less parameter. For instance, using this keyword,
+
+public TextLabelAttribute(int color, float size, int gravity, ViOffset offset) {
+       this(color, size, gravity, offset, opacity(default value))
+    }",Other
+"[query]You are already assigning this value in constructor.So, why this redundancy?
+If you want both then define a no argument constructor
+Same comments applied for all set method.",Other
+"Then client can call like, Type.Bar.STACKED",Other
+[suggestion] change the method name to isVisible(),Other
+"Suggestion : Define all values in one constructor which will contain all parameters and then call it form constructors having less parameter. For instance, using this keyword,",Other
+please add comment for readabilty,Other
+"Yes, setDeleted(""packageName"") will be applied for not installed case.",Other
+I will discuss with UI members regarding this so that they can update it.,Other
+Declare it as private,Other
+I think Sgc should be in capital format,Other
+move this func to parser,Other
+Correct this indentation,Other
+Remove unnecessary code,Other
+please use or condition instead of else if,Other
+Please finalize this TODO,Other
+Check in all code if this naming need to be changed,Other
+please clarify why 54 is used and use macro for static value,Other
+Also add Event.,Other
+"kindly check if it's possible to implement better name.
+
+Suggestion: semsFeedGen, feedGenerator",Other
+Please remove the indentation in empty lines,Other
+Kindly put a space before the left brace,Other
+Remove all spaces.,Other
+Remove indentation in the empty lines,Other
+Kindly put a space before the left brace,Other
+Please put a space in between optional check and left brace,Other
+Please remove the empty indentation,Other
+Change the name to createFeedView,Other
+Provide an empty line in between two protocol,Other
+"Better name like feedView, feedInteractor",Other
+Please put a space in between optional check and left brace,Other
+Keep the consistency in naming convention. Other modules are using 'Request' instead of 'Input'. Please change the name to FeedInteractorRequestProtocol.,Other
+Please put a space in between optional check and left brace,Other
+Please change the name to FeedInteractorResponseProtocol.,Other
+Please put a space in between optional check and left brace,Other
+Please change the name to FeedManagerRequestProtocol.,Other
+Please change the name to FeedManagerResponseProtocol.,Other
+"Kindly rename this variable, as this is not main storyboard
+
+Also use SocialConstants.swift for ""FeedStoryBoard"" and storyboard name",Other
+Remove empty indentation,Other
+"Kindly rename this variable, as this is not main storyboard",Other
+Please remove empty indentations,Other
+Use constant files for had coded values.,Other
+better not to force unwrap,Other
+"better not to force unwrap.
+Please check all occurrence
+
+Kindly put a space on the both side of a operator",Other
+use feedDataList.count instead of constant value,Other
+This function name seems confusing.,Other
+"Follow the same parenthesis convention for all the function and classes.
+
+i.e. in the same line or in the new line.",Other
+rename to resizeUploadedImage(),Other
+No need for these variables. They are same as the incoming params.,Other
+Better to use same naming convention for the width and height variable,Other
+This variable is unused.,Other
+"is newWidth and newHeight1 used?
+if not please remove",Other
+This variable is unused.,Other
+Better to use enum for status type,Other
+better to use epoch time for time data,Other
+remove empty indentations,Other
+Kindly remove empty indentations,Other
+UIKit doesn't seem to be used here.,Other
+Kindly put a space before the left brace,Other
+Kindly rename this variable as feedDataManager.,Other
+Kindly remove the empty indentation,Other
+Kindly put a space before the left brace,Other
+Should presenter be involved with manager? Please check here.,Other
+Kindly use SocialConstants.swift for hard coded values.,Other
+There doesn't seem to have a connection with manager.,Other
+Kindly use SocialConstants.swift for hard coded values.,Other
+Kindly remove all the empty indentations,Other
+Kindly use SocialConstants.swift for hard coded values.,Other
+Kindly use SocialConstants.swift for hard coded values.,Other
+Kindly maintain TODO comment format,Other
+kindly put a space before the left brace,Other
+Put space before the left brace,Other
+Kindly remove the empty indentations,Other
+"Please use detailed names as previous constants are detailed.
+Also append 'ID'",Other
+Use same formatting.,Other
+please don't use coder name in log. change the log as meaningful sentence,Other
+Replace this with a log later. Please make a note of it.,Other
+inherit EsimViewController,Other
+"change magic number
+
+as in LookupServerVC...",Other
+please remove test example,Other
+use Command QueryKey here,Other
+getHealthPRofileFromUuid ?? (unused code),Other
+"use QueryValue , as in GearCommand class query value",Other
+remove string use QueryValue,Other
+remove userDefaults,Other
+"this should be in SettingsProvider 
+there is Key class to keep keys encapsulated",Other
+Please check size o nontracker value.,Other
+correct indentation.,Other
+"This class represents use case.
+why viewcontroller is required in this class?",Other
+"Is it possible to add failed toast like- ""Failed to add bookmark"" or anyOther proper failed toast with localization?",Other
+What is the fallback if insert is failed?,Other
+To be updated while refactoring code.,Other
+Correct during refactoring,Other
+Refactor constant,Other
+please check alignment,Other
+"it should be:
+if (isGRPDEnabled)
+  return true;",Other
+Then it will return true for all countries.,Other
+pls set to false.,Other
+"this configuration is used only for DEBUG_SCM.
+Shouldn't we enable this feature by default in DEV ?",Other
+Do we need 2x2 and 3x3 sepearately?,Other
+Need to keep in dimens / color file?,Other
+Please move values to dimens in all of this file,Other
+Move to dimen files,Other
+Move dimen to files,Other
+Move dimen to files,Other
+Move to dimen files.,Other
+please use macro for default values,Other
+please use macro for default values,Other
+"This value is also exist in Base project.
+Please move to duplicated dimen resource to CommonRsc/res/values/dimens.xml",Other
+Please move to CommomRsc/... if needed in both project,Other
+"Visibility of tile_image_secondary_button is not GONE.
+Is it needed?",Other
+linear layout? ? ??? ????? TextView? ??? ? ? ????,Other
+[suggestion]Bartype and LineStyle class can be merged together as a class named Type which will contain two enums one is Bar and anOther is Line.,Other
+The source code change does not match with CL description. Please check if CL description is correct,Resource
+"Is this ""Like"" object passed by reference?
+if not, updating the imageHash here will have no effect. Please check.",Resource
+Please give more appropriate name as this is being added to common string resources file.,Resource
+"this solution works fine in our iPhone XR, but in tester's iPhone XR this issue still produces.",Solution Approach
+Saved default value is in Int format. So you should retrieve it as Int instead of String.,Solution Approach
+if possible to handle this scenario without using shared.,Solution Approach
+please comment full group,Solution Approach
+"Do we need to reset it here? If gear disconnect during binary download server, is downloading dismissed for that time?",Solution Approach
+NSString foundation framework used for Objective C. Instead of this use String in Swift.,Solution Approach
+"Notification settings handler was copied from Gear S. No store class was defined. At next, during refactor those issues can be consider.",Solution Approach
+"Notification settings handler was copied from Gear S.Lots of typo mistake still exist. At next, during refactor those will be fixed.",Solution Approach
+"Better use as : return NSMutableAttributedString(string: """") . Please check.",Solution Approach
+Update table function should not populate menu again. Remove it.,Solution Approach
+"Actually it has no definition, if we set badge number non-zero then again set zero all local notification removed. We already use this in app delegate for different purpose.",Solution Approach
+Please give log for this fail case.,Solution Approach
+"Please write hideBadge() using 
+label.hidden = true
+not like this",Solution Approach
+"Generally we do not check out of bound here. As the number of rows is counting from array length, cellForItemAtIndex will not get called for empty array.",Solution Approach
+These statements could be deleted. We should keep only complicated statements.,Solution Approach
+No need to create a variable for this. Later you can compare with the constants (SGAlarmManager.ConstantKey.NeverRepeatWeekDays).,Solution Approach
+"since, initSequence class will be deprecated and not used in any new feature. so please figure out alternative solution for it.",Solution Approach
+use SGGearCapabilityStore class to set / get information which are about to gear basic information. and use that class if possible.,Solution Approach
+"it is not Capability Store class responsibility to get BT address for SGAP. It will only save/retrieve values.  This code block should be moved to Other class.
+So, make call in OOBESequence class or any Other class to take this value and save using capability store if necessary.",Solution Approach
+IS_IT_OOBE_SEQUENCE variable has been used by UI team. So they may become confuse about naming. Suggesting IS_OOBE_ONGOING for better naming.,Solution Approach
+No need to maintain isDeviceDisconnected variable.,Solution Approach
+"This flag is necessary to update title string.
+please check whether it's needed or not",Solution Approach
+No need to maintain isDeviceDisconnected variable.,Solution Approach
+No need to maintain isDeviceDisconnected variable. Use isWMSConnected function to determine connectivity.,Solution Approach
+why SGAlarmWearableCommandProtocol? this name should be changed to better one for understanding its purpose.,Solution Approach
+"This flag is necessary to update title string.
+please check whether it's needed or not",Solution Approach
+"move these data classes to data file. and rename SGSuotaData""Objects"" to SGSuotaData.",Solution Approach
+Will update this,Solution Approach
+will update this.,Solution Approach
+"no force unwrap, check with if let and then use that value to write.",Solution Approach
+"please, use swift standard modenWidgetIdList:[Int], and initialize in init() using modenWidgetIdList = []",Solution Approach
+"if SIM wasn't inserted, no issue found",Solution Approach
+"In future if you want to use this variable, it is required to check for data type Int or String, Which is unexpected. 
+
+Try to make it generic for both legacy and Moden device.",Solution Approach
+"Are you sure that newAlarm will not be nil by anyhow? Please don't use force unwrap until you can't be sure about it. 
+Rather force unwrap use guard or if let checking for optional value to reduce future crash.",Solution Approach
+As in this function have asynchronous network call. So please make closure/Block based function and from this function only return appDownloadParams.,Solution Approach
+As in this function have asynchronous network call. So please make closure/Block based function and from this function only return appDownloadInfoDict.,Solution Approach
+what will be the handler value for Error case ?,Solution Approach
+I will remove it in my upcoming patch.,Solution Approach
+"It will be better if you give some Other name for this as inside the function have anOther handler.
+
+This can create confusion.",Solution Approach
+"alarm team of android said modern can't support more than 10 alarm and also UI side it is previously implemented as maximum 10 alarm will be there. So, this 20 cause a miss match for UI and backend",Solution Approach
+"Patch Set 3: Code-Review+1
+
+Check Item:
+1. Delete stored authentication related info for new connection.",Solution Approach
+Remove that part.,Solution Approach
+"What type of error/warnings in future?
+It is not showing any warning.
+
+Besides in the next line it will be assigned by a dictionary.",Solution Approach
+"To remove an observer, the SGNetworkreachabilityMonitor class searches for that specific listener object by it's ID first. if it is available, it applies the remove operation. Otherwise it prints listener object-id not found.",Solution Approach
+"Whenever a client starts an observer, it has to send a protocol object in the parameter to SGNetworkReachabilityMonitor class, and the class stores that object by an id. And returns the id to the client.
+To remove that observer later, the client has to pass that id as reference to that specific listener object.",Solution Approach
+"Patch Set 2: Verified+1 Code-Review+1
+
+Check Item:
+TMO operator is defined based on mcc (310) && provider name (""T-mobile"")",Solution Approach
+"Patch Set 1: Verified+1 Code-Review+1
+
+Check Item:
+Change default encoding.",Solution Approach
+"Patch Set 1:
+
+initial capex message are same and end didReceiveInitSettingsResponse we have make a decision based on connection and reconnection
+if isReconnectingModen then we post only notification Otherwise call processNextStep
+OOBE and reconnection step working fine",Solution Approach
+"it was  legacy device change, after after discuss with moden and android team I make anOther change. because I have one more change between those CL",Solution Approach
+Here need to call isTWCSupported(salesCode).,Solution Approach
+This should be 1.,Solution Approach
+"please, refactor this alamofire related code with SGAlamofireAdapter class.",Solution Approach
+"Patch Set 1: Code-Review+1
+
+Checked Item:
+1. accesstoken nil value and validity check.",Solution Approach
+"Auto update should be available if user ON FOTA AUTO update and Device connected with Wi-FI
+add anOther check with user default value that appear from IS_FOTA_AUTO_UPDATE_ENABLE  Key",Solution Approach
+"it seems to me that this init function is doing what it should not be. this block of code should be refactored to better anOther way.  
+init should not be instantiate Other class interanlly and then use that.",Solution Approach
+"Please remove this lines. This may create ambiguous scenario. Support you connect with a Galaxy Fit. Now from Connect New Gear, tap on a Gear Fit2 Pro to connect. The soup with show ""Connect with Band"". So Remove it.",Solution Approach
+Please keep existing change. We need to show a generic message during Connecting and Pairing,Solution Approach
+Please change the protocol name like SGSuotaServerFirmwareDownloadResponseProtocol,Solution Approach
+"Commit message has been updated.
+1. SGAppManager class became too large and convoluted. It was also serving multiple purposes. Hence refactoring into multiple classes was required. 
+2. Featured app related codes were refactored and re-written into swift.
+3. Test is ongoing, with Log/Debug and manual checking. Unit testing was not written yet.",Solution Approach
+"Already the text alignment is set to natural.but
+it's not working by setting text alignment natural.",Solution Approach
+"Patch Set 1: Verified+1 Code-Review+1
+
+This lib contains weather module new field.",Solution Approach
+"This menu will only show for LTE model. This condition should be like 
+if !SGUtils.isBTModel() {
+    //show Call Forwarding page
+}",Solution Approach
+"""Reset Failure"" log should be added.",Solution Approach
+"To reveal new Terms and Condition page.
+When, SGInitSequence is ready, then it will be opened and upper portion of the code will be removed",Solution Approach
+"This funciton will automatically print function name, because under this, DDLogVerbose has been called",Solution Approach
+As this change is not related to UI side so you can inform exact person of backend for applying better solution.,Solution Approach
+Sending back Notification instead of Response in case of message sending failed due to no User Profile.,Solution Approach
+"Patch Set 1:
+
+Not fully implemented. Pushed this patch for test purpose.",Solution Approach
+"Kept assert() in order to trace of any error caused by this execution in the log, and for immediate exit from application execution upon occurrence of this",Solution Approach
+Button enabled when floor open and call released,Solution Approach
+This value has been changed as per the value found in the PCAP of type3 android.,Solution Approach
+This value has been changed as per the value found in the PCAP of type3 android.,Solution Approach
+"Patch Set 3: Code-Review-1
+
+Please abandun the commit. Because of urgency, I have pulled it. Resolve the conflict and fix problem, related with HQ server and merged it.",Solution Approach
+Mandatory attributes are set on front according to the priority.,Solution Approach
+I think. this transition should be turned off if retrieved from core data as the view will load immediately. Please consult with UX.,Solution Approach
+"IdType Shouldn't be nil.
+define Unknown in enum and force user to pass id type",Solution Approach
+"Patch Set 6: Code-Review-2
+
+Change will have side effects.",Solution Approach
+"This if-else condition is getting bigger and bigger. There could be more variation of post in future.
+
+Better define functions for each type of cell  for cleaner code.",Solution Approach
+"In Family group all Member post, Shopping list and Device event should be visible.",Solution Approach
+This condition is necessary. This change will cause side effect.,solution Approach
+"Please move these color definitions to a separate enum named 'SocialFontColors"" in this file. This is adopted in one of the yet CLs under review and will be adopted.",Solution Approach
+"Since you've managed to move it here (good job), please go on and set likerLabel with User names bolded using attributed text.",Solution Approach
+This will be submitted in anOther commit. I will add a TODO,Solution Approach
+"this logic is swapping out family group with the one that comes first. Meaning, it would be breaking the order of the groups brought from server. I'd suggest that you simply remove the family group and insert it at index 0 to keep that order.",Solution Approach
+add IDS prefix to this and all the following that lacks it,Solution Approach
+It should not be mandatory as post can be created without any tagged users,Solution Approach
+"> this method should not be here, View is directly accessing
+ > ImageCacheStorage rather FeedbackManager should communicate with
+ > ImageCacheStorage.
+
+Good job, Marjan..",solution Approach
+"1. CoreData already support update for Comment entity.
+2. I believe we need to update the imageHash only if the imageHash is nil.",solution Approach
+please avoid force unwrapping as it may make the app to crash.,solution Approach
+Group Id is already non optional. So nil cannot be assigned.,solution Approach
+Mandatory attributes are set on front according to the priority.,solution Approach
+"Patch Set 6: Code-Review-2
+
+Change will have side effects.",solution Approach
+"Since all the UIImage attribute are getting removed from all the entities. I'd recommend not to use ""uploadedImage"" attribute as it is UIImage type.
+
+Try to use ""uploadedImageHash"" Instead.",Solution Approach
+"This if-else condition is getting bigger and bigger. There could be more variation of post in future.
+
+Better define functions for each type of cell  for cleaner code.",Solution Approach
+This condition is necessary. This change will cause side effect.,solution Approach
+Put cause and measure while fixing issues.,solution Approach
+"this logic is swapping out family group with the one that comes first. Meaning, it would be breaking the order of the groups brought from server. I'd suggest that you simply remove the family group and insert it at index 0 to keep that order.",Solution Approach
+"keep gesture recogniser as member variable.
+It will create multiple instances and won't be possible to remove it.",solution Approach
+please investigate if elementsEqual can be replaced with implementation of Equitable and usage of ==,Solution Approach
+please avoid force unwrapping as it may make the app to crash.,Solution Approach
+It should be error log. and please provide it in proper format.,Solution Approach
+We are supposed to use images from SocialImages class.,Solution Approach
+"Patch Set 6: Code-Review-2
+
+Change will have side effects.",solution Approach
+"Since all the UIImage attribute are getting removed from all the entities. I'd recommend not to use ""uploadedImage"" attribute as it is UIImage type.
+
+Try to use ""uploadedImageHash"" Instead.",Solution Approach
+This condition is necessary. This change will cause side effect.,solution Approach
+"Please move these color definitions to a separate enum named 'SocialFontColors"" in this file. This is adopted in one of the yet CLs under review and will be adopted.",Solution Approach
+"this logic is swapping out family group with the one that comes first. Meaning, it would be breaking the order of the groups brought from server. I'd suggest that you simply remove the family group and insert it at index 0 to keep that order.",Solution Approach
+It should not be mandatory as post can be created without any tagged users,Solution Approach
+"self is not mandatory here and IDE's color coding would suffice to indicate if it is a member variable or a function variable. However, this format has been used in all APIs that has the definition of a handleSuccessResponse(data: Data) function as this would adds further to readability at the expense of increased verbosity. As such this refactoring, if necessary, would be too extensive and out of the scope of this commit.",Solution Approach
+"self is not mandatory here and IDE's color coding would suffice to indicate if it is a member variable or a function variable. However, this format has been used in all APIs that has the definition of a handleSuccessResponse(data: Data) function as this would adds further to readability at the expense of increased verbosity. As such this refactoring, if necessary, would be too extensive and out of the scope of this commit.",Solution Approach
+"1. CoreData already support update for Comment entity.
+2. I believe we need to update the imageHash only if the imageHash is nil.",Solution Approach
+"You are right, nil is commonly used for object.
+
+NULL (void *)0 - more generic for pointer that points to nothing
+nil (id)0 - object that points to nothing.
+in underline nil is also kind of NULL
+
+For this case NULL will work with no problem, but for code consistency I will update it.",Solution Approach
+"The protocol method is generic to every tracker (weight , stress, HR, BG). That's why I used the first and second name. 
+Let me know your feedback",Solution Approach
+SHMOttFileAggregator.processOttFile file saves and uploads ott to server. Testcase gets completed before receiving server response (we are inserting to history table after receiving server response),solution Approach
+"[S] The min and max values are declared as Integer in SHTBloodPressureConstants. We can use those values.
+[S] stands for suggestion, [Q] for query.",Solution Approach
+"Patch Set 1:
+
+(10 comments)
+
+This patch was initial structure patch to avoid merge conflict. Dummy Clean swift method will be removed in next change list.",Solution Approach
+"Create group in function level and pass to the load functions instead of creating at class level.
+If this function is called multiple times, having the group in class level can have non-deterministic behavior.",Solution Approach
+"use  logic like this.
+self.pulseRateContainerView.isHidden = !viewModel.isPulseRateAvailable OR
+self.pulseRateContainerView.isHidden = (viewModel.isPulseRateAvailable)? false: true",Solution Approach
+"yes, string append works with + statement in swift, will change it to lumberjack log, this is temporary log to debug, value will be updated to ui in next change",Solution Approach
+"Go to TileView class and mark following as deprecated
+
+Type
+GOAL
+PROGRAM
+
+Templates:
+RECORD
+SUGGESTION
+IMAGE
+WIDE_TRACKER
+HEADER
+GOAL
+WEIGHT_GOAL
+PROGRAM_RECOMMEND
+PROGRAM_INNER_RECOMMEND
+
+The above mentioned Types & Templates are recommended to be marked as @Deprecated",Solution Approach
+fileprivate is more convenient if we want to use class extension and access these members variables and func,Solution Approach
+"for localizing you may start to use TextConstants, so that in future it become easier to change",Solution Approach
+"I think, this part should not be in Manager. It should be passed between views via presenter->wireframe/Other navigation ways, and forward view should request detail data for that contact.",Solution Approach
+"Unit can be set each color.
+You have to use mDataTextColor for mMainValueData and mSubValueData, mUnitTextColor for mMainValueUnit and mSubValueUnit.",solution Approach
+"As cell will be differ for each Post Type, it's better to bind the cell layout within the condition. Also in this case, it's been bind to feedTableViewCellXib twice. Once in the function main body and anOther time within the condition. Kindly check.",Solution Approach
+"Maintain proper ""TODO"" comment as below
+
+//TODO: Pass the selected item data to the Profile view -- sahedul.i",Solution Approach
+"Its not profile view, its Contact List view. Please change the name.",solution Approach
+"if it is only necessary to view , then rename it as SGEsimNetworkInfoViewModel
+if it is necessary to esim feature common to all SGEsimNetworkData",Solution Approach
+It's ok. Moved to global file SGConstant.h,Supporting library
+"This is a third party library.
+Later on, it will be moved under pod.",Supporting library
+need to release memory to avoid memory overflow,Synchronization
+Reduce number of logs,Synchronization
+check is memory available to here and call error delegate if don't have available space,Synchronization
+need to check if the row is out of bound or not,Synchronization
+is it necessary to be static... create instance of capability store and then use it. when instance will be garbage collected then memory will be freed.,Synchronization
+"You can use artifact_path to save derived data. Project root should remain intact. Moreover, our git configuration ignore output path for indexing.",Synchronization
+"nsinteger is automatically bridged to Integer from objective c to swift
+and it is suggestion given by xcode",Synchronization
+"tips card might have different types of button,
+So to identify properly, bottom Right Btn has been introduced.
+if there is anOther button, then it should bottom left button",Synchronization
+"If it is a requirement to create a class to contain all the texts, I will implement it.
+
+I think, we should not consume memory for all this static texts twice.",Synchronization
+"For current case we can ignore background thread. But if we need network related task then we need to do those in background thread.
+
+Ref link :
+https://stackoverflow.com/questions/37805885/how-to-create-dispatch-queue-in-swift-3",Synchronization
+"No, aboutGearCardcell is not optional. Xcode suggests to do like this.",Synchronization
+"No, aboutGearCardcell is not optional. Xcode suggests to do like this.",Synchronization
+"sending Explicit Value = False for logout, hence only local DeRegister would be performed",Synchronization
+"please check this, maybe for nsstring we don't need to initialize property, also check for Other kind of properties also.",Synchronization
+"@synthesize is not needed in modern Objective C, please see https://stackoverflow.com/questions/9368676/under-what-conditions-is-synthesize-automatic-in-objective-c",Synchronization
+This closure should be set as completionTask of ThreadWorker.,Synchronization
+Test with weak property for the container view. this may prevent memory leak.,Synchronization
+declare a constant for compression quality.,Synchronization
+This closure should be set as completionTask of ThreadWorker.,Synchronization
+This closure should be set as completionTask of ThreadWorker.,Synchronization
+Test with weak property for the container view. this may prevent memory leak.,Synchronization
+declare a constant for compression quality.,Synchronization
+This closure should be set as completionTask of ThreadWorker.,Synchronization
+This closure should be set as completionTask of ThreadWorker.,Synchronization
+"Patch Set 1: Verified-1
+
+Description Validation failed.
+Error: [Feature Name] has invalid value : Two_Way_Sync_Floor  
+Format: [Title] Apt title for your change [Checking Method] Mention the testing flow [Type] feature (catch-up) or Patch or Feature or Bugfix [Feature Name] Your Feature Name [Self Test Result] Pass",Synchronization
+"previously we reset all variables to nil, to prevent memory leak issue.
+
+But Rajesh found anOther reason for memory leak,
+In SHTSportSplitView.h, AfterworkoutViewController was defined as strong, which causes memory leak.
+
+Now, we have defined that property as weak in following class
+
+team/health/iosSHealth / Codes/SHealth/SHealth/Tracker/Sports/UI/View/Split/SHTSportSplitView.h
+
+and, this might fix memory leak issue without reseting all variables.",Synchronization
+your two variable names are different (dx and mDx).In this case this is redundant. Same comments applied for all varibales,Synchronization
+"if we use images from App assets it'll case circular dependency during project build.
+
+Please remove it.",Synchronization
+Please keep this in main thread as it is UI operation,Synchronization
+"runnable can make memory leak, use weakref or static class of handler",Synchronization
+"during change view and lens type popup orientation change, animation disabled",Validation
+Type mistake in method name. chech -> check,Validation
+"Please, change name.. why Get... prefix in class name.",Validation
+"Please replace it by ""Change"".",Validation
+What will happen for RTL case. Did you check and verify.,Validation
+Please change this to modelNumber.,Validation
+"when the latest firmware is installed, then the firmware update will be unavailable and 'invalid' response will be sent to client (UI).",Validation
+Please use lowercased() value as your dictionary key is in lower cased. It will help to prevent any further issue.,Validation
+This will be changed in next cl. This is integration cl,Validation
+We display key as header of a row.,Validation
+"Put ""Need DID"" comment beside this type of statements.",Validation
+"Please remove Implicitly unwrapped optional.
+just simple variable",Validation
+"Patch Set 1: Verified+1 Code-Review+1
+
+Added alamofire and SWXMLHash POD support for Unit Test.",Validation
+"format should be as ""@%"" for RTL languages.",Validation
+this name should be started with Uppercase.,Validation
+"As per GUI guide, Card Title should not be uppercased.",Validation
+"As per GUI guide, Card's button title should not be uppercased.",Validation
+"Patch Set 1:
+
+After Completing backend, we will submit this CL. Till then it will be in pending state.",Validation
+use full name for variable.,Validation
+Please localise for ok text,Validation
+Better to make it string. But convert to Int while sending to moden device.,Validation
+I am change the name.,Validation
+I am correcting the typo.,Validation
+"We need to move from TnC Page,
+So From Home Tab We have to move after Band reset.
+Dispatching is needed to give a delay Otherwise it's too fast that, sometimes it hangs because it misses it's parent",Validation
+Not match with context.,Validation
+Give a generic variable name like termsAndConditionMandatoryText,Validation
+it should be in store class.,Validation
+It will be gr8 if you use some better name.,Validation
+It will be gr8 if you use some better name.,Validation
+Please avoid underscore in Class name.,Validation
+Please avoid underscore in Class name.,Validation
+"please, use standard format varname: type",Validation
+This is optional type. So i think need to give default value if value is nil.,Validation
+"Patch Set 1: Code-Review+1
+
+Check item:
+is_initial_watch parameter value is changed for moden.",Validation
+Can use CamelCase Convension for static let type constant.,Validation
+SGNetworkReachabilityMonitor is not well tested till now. So i prefer current apple rechability.,Validation
+if it is instance variable please use self.  except for local variables,Validation
+Alamofire is used to check network reachability status.,Validation
+"Patch Set 1:
+
+AlamofireHttpAdapter is not the part of this CLs and commit message does not match. please give separate CLs for this.",Validation
+"Patch Set 1: Code-Review-1
+
+Need to verify fist",Validation
+"If found any problem in the initiation of the audioUnit, re-enable the audio session, and reinitiate.",Validation
+Please use NULL checking.,Validation
+"instead of assigning this numbers here from macro, add parameter 
+in future there will be multiple numbers and this will not be used.",Validation
+Send back message adman id when user profile null,Validation
+Is it necessary to add anOther parameter? memberList is being sent already.,Validation
+please see if imageHash should be assigned nil,Validation
+"Should this string be hard coded?
+
+use localised strings.",Validation
+Check if there is any append function. This may create new arrays.,Validation
+"self is not mandatory here and IDE's color coding would suffice to indicate if it is a member variable or a function variable. However, this format has been used in all APIs that has the definition of a handleSuccessResponse(data: Data) function as this would adds further to readability at the expense of increased verbosity. As such this refactoring, if necessary, would be too extensive and out of the scope of this commit.",Validation
+"self is not mandatory here and IDE's color coding would suffice to indicate if it is a member variable or a function variable. However, this format has been used in all APIs that has the definition of a handleSuccessResponse(data: Data) function as this would adds further to readability at the expense of increased verbosity. As such this refactoring, if necessary, would be too extensive and out of the scope of this commit.",Validation
+Before removing we have to check it further,Validation
+Instead of using DispatchQueue let's use Background Task handler. check with Rakeeb.,Validation
+Instead of using DispatchQueue let's use Background Task handler. check with Rakeeb.,Validation
+Write down the parameter names beside the function header in comments,Validation
+Try with Background Task handler. Discuss with rakeeb and pronab,Validation
+"Is it mandatory field? If so, add Validation.",Validation
+"instead of assigning empty string, use decodeIfPresent and apply nil coalescence
+(??) and assign """"",Validation
+"Please move these color definitions to a separate enum named 'SocialFontColors"" in this file. This is adopted in one of the yet CLs under review and will be adopted.",Validation
+Instead of using DispatchQueue let's use Background Task handler. check with Rakeeb.,Validation
+Instead of using DispatchQueue let's use Background Task handler. check with Rakeeb.,Validation
+Try with Background Task handler. Discuss with rakeeb and pronab,Validation
+Is it necessary to add anOther parameter? memberList is being sent already.,Validation
+Instead of using DispatchQueue let's use Background Task handler. check with Rakeeb.,Validation
+Instead of using DispatchQueue let's use Background Task handler. check with Rakeeb.,Validation
+"Please return nil for all assert null, from caller side we need to handle it.",Validation
+"is it specified that this font is to be used.
+usually we use system font. to use system font -> SHHCommonUtils.fontWithSize api.
+there are 4 variants of these api. use which is appropriate.",API Calls
+validate that the array size is correct.,Validation
+"this method should be in SGEsimSettingsProvider, and post in this info in NSNotificaiton center and notification handler",Validation
+"HomeDashboardTabActivity does not used in 6.0
+HomeDashboardActivity is main activity",Validation
+"With the automatically generated code, I just removed 'm' prefixes from the paramters in constructor. That's all. I didn't add this manually.
+
+Anyway, I will fix this. thanks.",Validation
+this code used in two classes.Can be placed in util class just passing a list of parameters,Validation
+Please check if Bixby needs to be handled for new logic.,Validation
+Use Date type instead of string. We can have custom Time class as well.,Validation
+Send current user's profile ID as parameter.,Validation
+dynamically calculating the height of footer cell based on the text,Visual Representation
+sticker view now in center of screen,Visual Representation
+panorama and sphere view mode should be rendered on opposite Y axis,Visual Representation
+blank view added to hide surface view during orientation change,Visual Representation
+is there anOther way to maintain this constant so that this block of code be more readable and maintainable.,Visual Representation
+"Not Modern, It should be Moden.",Visual Representation
+"Patch Set 1: Code-Review+1
+
+Check items :
+1. Reverser the repeated days list for alarm.",Visual Representation
+we are unwrapping it forcefully. Do we need to use let guard?,Visual Representation
+"1. font color should be black as per UX requirement. Please check.
+2. Font weight should be default, NOT medium.",Visual Representation
+Need to add some comments what does ideal version means or what is the purpose of this,Visual Representation
+Ok I am adding comment,Visual Representation
+"Patch Set 4: Code-Review-1
+
+(2 comments)
+
+Need to remove some unnecessary changes from project file.",Visual Representation
+"this class will use only back end, any Other class will not use, also no need to create any Other instance. only if user change the phone local time this class will send current time information to moden",Visual Representation
+Which tips card call? Please give meaningful log.,Visual Representation
+"Please give a proper button name. It can be like didTipsCardActionBtnPressed. Also, can we print the Tips card name based on the tag we get?",Visual Representation
+"Please mention in log that, this is for RTL case. Otherwise it will look same for LTR case as well.",Visual Representation
+log should be added here,Visual Representation
+add a log after replacing spacial chars.,Visual Representation
+"please, create separate parser file and put it there.",Visual Representation
+SGNetworkReachabilityMonitor this classs can be use for any network related info,Visual Representation
+Duplicate code block.,Visual Representation
+Return sorted list by name quote is true. Thats why i didn't removed that comment.,Visual Representation
+Please give a space. It will increase readability.,Visual Representation
+"Class variables should be at top, just after class declaration for readability.",Visual Representation
+Insufficient space between functions.,Visual Representation
+Previously a CL with same name and purpose was given.,Visual Representation
+This change has been reverted in the latest patch,Visual Representation
+"Please put __APPLE__ checking only in the change you have made, not the entire code",Visual Representation
+"Please use something meaningful, like MNO == ATT.... etc",Visual Representation
+already implemented,Visual Representation
+"We are using SocialColors class. Use from there. if it is for removing the separator only for this view, then no need.",Visual Representation
+"keep gesture recogniser as member variable.
+It will create multiple instances and won't be possible to remove it.",Visual Representation
+Better use class name instead of hard coding.,Visual Representation
+Try to pass image view and move the function to Util class. Reduce duplicated codes.,Visual Representation
+better to break the line for readability.,Visual Representation
+Avoid hardcoding.,Visual Representation
+"I think if you separate ""fromCache"" to ""from cache"" then it will be more readable
+and also change to ""groupInteractor?.getGroupMembers(of: group, from: cache)""",Visual Representation
+Don't use image literals directly. Use from social images class.,Visual Representation
+make it userInteractive since the User is waiting for the UI update.,Visual Representation
+"Fillow the asset file name convention
+refresh_icon@1x.png
+refresh_icon@2x.png
+refresh_icon@3x.png",Visual Representation
+"In Family group all Member post, Shopping list and Device event should be visible.",Visual Representation
+"Filter should be added in the Manager/Helper side.
+Not in the ViewController.
+
+Please Modify accordingly.",Visual Representation
+Add TODO comment to remove hard values in switch case.,Visual Representation
+why is error optional in failure block? Please log error even if error is nil to notify of failure,Visual Representation
+Add explanation comment here.,Visual Representation
+Better use class name instead of hard coding.,Visual Representation
+better to break the line for readability.,Visual Representation
+Avoid hardcoding.,Visual Representation
+it will be better if we keep it in a constant,Visual Representation
+introduce constant according to accompanying TODO comment if possible,Visual Representation
+"I think if you separate ""fromCache"" to ""from cache"" then it will be more readable
+and also change to ""groupInteractor?.getGroupMembers(of: group, from: cache)""",Visual Representation
+"Fillow the asset file name convention
+refresh_icon@1x.png
+refresh_icon@2x.png
+refresh_icon@3x.png",Visual Representation
+Add TODO to make '....CardCell' base class to remove duplicate codes.,Visual Representation
+"This if-else condition is getting bigger and bigger. There could be more variation of post in future.
+
+Better define functions for each type of cell  for cleaner code.",Visual Representation
+"In Family group all Member post, Shopping list and Device event should be visible.",Visual Representation
+better to break the line for readability.,Visual Representation
+This function is deprecated. This was for Navid's test call which sends array of dictionary. Now we send array of object and convert it to dictionary in syncManager side.  So syncManager.sendScoreData has changed.,Visual Representation
+[S] better to put a space before and after '=' for awesome readability like in previous lines.,Visual Representation
+"commenterName is actually a UILabel.
+
+better to rename it as commenterNameLabel",Visual Representation
+"1. Kindly follow the naming convention for functions
+2. Kindly put a space before the left brace",Visual Representation
+Kindly use the constant class for the hard coded values,Visual Representation
+"statusView is not a UIView, instead it's a UILabel.
+It's better if we can name it accordingly",Visual Representation
+"For readability you can assign it as below...
+cell.profileImage.image = selectedProfile?.profilePic ?? UIImage(named: SocialConstants.defaultContactImage)",Visual Representation
+"better to change to SSOSupportRequired. Also param name to ssoRequired.
+Not mandatory to change though :)",Visual Representation
+please comment for increasing code readablilty,Visual Representation
+"BarGraphAttribute ==> ""GuideBarAttribute"" is null.
+Will increase the readability",Visual Representation
+"your two variable names are different (mSize and size).In this case this is redundant.
+Same comments applied for all variables",Visual Representation
+forcing typecasting may cause FC. as first will be called on optional type.,Visual Representation
+forcing typecasting may cause FC. as first will be called on optional type.,Visual Representation
+"The value of ""newHeight"" is not changed anywhere in this method.
+Do we need to assign ""viewHeight"" to ""newHeight""?
+kindly check.",Visual Representation
+"Follow the same parenthesis convention for all the if conditions
+i.e. in the same line or in the new line.",Visual Representation
